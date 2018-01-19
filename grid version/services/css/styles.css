@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Rubik");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'lato',sans-serif;
+}
+
+h1 {
+  color: goldenrod;
+  font-family: 'rubik',sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  padding: 25px;
+}
+
+h2 {
+  margin-left: 10px;
+  color: goldenrod;
+  font-size: 45px;
+  font-family: 'rubik',sans-serif;
+  font-weight: 600;
+  padding: 20px;
+  text-align: justify;
+}
+
+p {
+  margin-left: 10px;
+  font-size: 25px;
+  padding: 10px;
+  text-align: justify;
+}
+
+span {
+  font-weight: 700;
+}
+
+.container {
+  width: 95%;
+}
+
+.border {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 1px;
+  border-bottom: 0.5px solid #8d8c8c;
+  margin-top: 30px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 47.777em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 47.777em) {
+  img {
+    margin-left: 18%;
+  }
+  .center {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: justify;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (width: 600px) {
+  img {
+    margin-left: 180px;
+    margin-top: 30px;
+  }
+  .image4 {
+    margin-top: 40px;
+    margin-left: 170px;
+  }
+  .center {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  img {
+    padding-left: 150px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  img {
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+  .image4 {
+    margin-top: 40px;
+    margin-left: 110px;
+  }
+}

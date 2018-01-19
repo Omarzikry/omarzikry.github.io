@@ -1,0 +1,24 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Lato|Rubik|PT+Sans');
+body{font-family: 'lato',sans-serif;
+@media only screen and (min-width:48em){
+    overflow-y: hidden;
+}
+}
+
+h1{font-family: 'PT Sans',sans-serif;font-size: 4em;color: goldenrod;text-align: center;padding: 20px}
+h2{font-family: 'lato',sans-serif;font-size: 3em;color: fuchsia;padding: 10px}
+.empty{min-height: 1px;background: grey;
+@media only screen and (max-width:47.899em){
+    display: none
+}
+}
+.empty:hover{background: none;transition: all 1s ease 0s}
+.grid{display: grid;display: -ms-grid;grid-template-columns: 1fr 1fr;height: 83vh;
+@media only screen and (max-width:47.899em){
+    grid-template-columns: 1fr;height: 50vh;
+}
+}
+.text{width: 80%}
+.container{border: 2px dashed grey}
+p{font-size: 1.5em;line-height: 1.5em;padding: 10px}

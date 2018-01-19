@@ -1,0 +1,166 @@
+@import 'reset';
+
+//==========
+//  base
+//==========
+body{background: rgb(143, 143, 143) !important;transition: background-color .5s;}
+
+
+//============
+//  grid 
+//============
+
+.wrapper{display: grid;grid-template-columns: 1fr;grid-auto-rows: 468px;
+@media only screen and (min-width:48em){grid-template-columns: 1fr 1fr 1fr;};
+&:hover{}
+}
+img{height: 468px;width: 100%;display: block;}
+
+.wrapper>div{
+    background-color: #eee;
+}
+.wrapper>div:nth-child(odd){
+    background-color: #ddd
+}
+
+
+@media only screen and (min-width:48em){
+    .item {
+        position: relative;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: 468px;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: black;
+      }
+      
+      .item:hover .overlay {
+        opacity: 1;
+      }
+      
+      .text {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .sm-text{padding-top: 10px;color: rgb(151, 150, 150);font-size: 15px;}
+
+
+      //======
+      // nav 
+      //======
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    #main {
+        transition: margin-left .5s;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    .open{position: fixed;top:20px;left: 20px;color: white;font-size: 30px;cursor: pointer}
+}
+
+
+
+//==========================
+// Nav extra small and small
+//==========================
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.open{position: fixed;top:20px;left: 20px;color: white;font-size: 30px;cursor: pointer}
+@media only screen and (max-width:47.877em){
+  .overlay{display: none;}
+}
