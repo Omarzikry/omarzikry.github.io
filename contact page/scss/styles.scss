@@ -8,10 +8,11 @@ h1{text-align: center;padding: 40px;font-family: 'rubik',sans-serif;color: golde
 }
 }
 form{display: flex;width: 50%;margin: 0 auto;flex-direction: column;}
-input{height: 35px;padding: 20px;margin: 20px;font-size: 20px ;}
+input{height: 35px;padding: 1%;margin: 20px;font-size: 20px ;}
 textarea{padding-top: 5px;padding-left: 5px;padding-bottom: 20px;padding-right: 20px;margin: 20px;font-size: 20px}
 .border{border: 2px solid goldenrod}
 .border:focus{border: none;}
+input::placeholder{color: goldenrod;font-size: 20px}
 input::-webkit-input-placeholder{color: goldenrod;font-size: 20px}
 input::-moz-placeholder{color: goldenrod;font-size: 20px}
 input::-ms-input-placeholder{color: goldenrod;font-size: 20px}
@@ -24,6 +25,5 @@ input[type=submit]:hover{background-color: gold;transition: all 0.5s ease 0s}
 
 
 @media only screen and (max-width:47.777em){
-    form{display: flex;width: 90%;margin: 0 auto;flex-direction: column;}
-    input{height: 35px;padding: 5%;margin: 20px;font-size: 10px ;}
+    form{display: flex;width: 80%;margin: 0 auto;flex-direction: column;}
 }
