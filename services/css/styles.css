@@ -63,6 +63,12 @@ h1 {
   padding: 25px;
 }
 
+@media only screen and (max-width: 47.777em) {
+  h1 {
+    margin-top: 1em;
+  }
+}
+
 h2 {
   margin-left: 10px;
   color: #4F4F4F;
