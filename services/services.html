@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="main">
         <h1>SERVICES</h1>
     </header>
-    <main>
+    <main id="main">
         <div class="container">
             <h2>What should you expect to get</h2>
             <p><span>A</span> fully responsive website design that works accross all browsers.</p>
@@ -41,6 +41,20 @@
             </div>
 
         </div>
+        <span class="open" onclick="openNav()">&#9776;</span>
     </main>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="../about/about.html">About</a>
+        <a href="../contact page/contact.html">Contact</a>
+        <a href="#">Resume</a>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
 </body>
 </html>
