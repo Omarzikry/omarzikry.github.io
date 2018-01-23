@@ -1,6 +1,7 @@
 @import 'reset';
+@import 'nav';
 @import url('https://fonts.googleapis.com/css?family=Lato|Rubik|PT+Sans');
-body{font-family: 'lato',sans-serif;background: #9C9C9C;
+body{font-family: 'lato',sans-serif;background: #9C9C9C !important;
 @media only screen and (min-width:48em){
     overflow-y: hidden;
 }
