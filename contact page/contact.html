@@ -7,16 +7,31 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<h1>LET'S WORK TOGETHER</h1>
+    <main id="main">
+        <h1>LET'S WORK TOGETHER</h1>
 
-    <form action="https://formspree.io/omarzikry69@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Your name" class="border">
-    <input type="email" name="_replyto" placeholder="Email" class="border">
-    <textarea name="message" placeholder="Tell Me about your Project" class="border"></textarea>
-    <input type="submit" value="Send">
-    </form>
+        <form action="https://formspree.io/omarzikry69@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your name" class="border">
+            <input type="email" name="_replyto" placeholder="Email" class="border">
+            <textarea name="message" placeholder="Tell Me about your Project" class="border"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        <span class="open" onclick="openNav()">&#9776;</span>
+    </main>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Work</a>
+        <a href="../services/services.html">Services</a>
+        <a href="../about/about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Resume</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
