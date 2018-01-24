@@ -21,7 +21,7 @@ nav {
 }
 
 a.navbar-brand {
-  color: #212121;
+  color: #212121 !important;
 }
 
 .full {
