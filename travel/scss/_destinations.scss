@@ -1,4 +1,4 @@
-.wrapper{height:40vh;margin-top: 10em;}
+.wrapper{min-height:40vh;margin-top: 10em;}
 .image{width: 446px;height: 100%;background-size: cover;background-repeat: no-repeat;border-radius: 9px;position: relative}
 .overlay{background-color: rgba(255, 255, 255, 0.753);height: 100%;width:50%;position: absolute;left:0;border-top-left-radius: 9px;border-bottom-left-radius: 9px}
 .overlay h3{text-align: center;}
@@ -7,6 +7,6 @@
 
 
 @media only screen and (max-width:47.777em){
-    .wrapper{height: 42vh}
+    .wrapper{min-height: 42vh}
     .image{width: 100%}
 }
