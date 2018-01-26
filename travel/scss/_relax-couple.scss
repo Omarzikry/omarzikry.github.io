@@ -1,7 +1,8 @@
 .relax{margin: 0; padding: 0;}
 .relax h1{text-align: center;font-size: 3em;color: $light-blue;}
-.relax p{text-align: center;font-size: 1.5em;color: black;}
+.relax p{text-align: center;font-size: 1.5em;color: black;font-weight: 500}
 .main-text{padding: 1em}
+.white1{height: 100% ;background: rgba(255, 255, 255, 0.425);background-size: cover ;padding-top: 1px;}
 
 @media only screen and (min-width:48em){
     .white{height: 100% ;background: rgba(255, 255, 255, 0.425);background-size: cover ;padding-top: 1px;width:50%;}
