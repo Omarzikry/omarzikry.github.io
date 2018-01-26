@@ -19,7 +19,7 @@
     background: #3a6186; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #3a6186 , #89253e); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #3a6186 , #89253e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      color : #fff;    
+      color : #fff;
   }
   .contact-section{
     padding-top: 40px;
@@ -58,21 +58,7 @@
   
   }
 @media only screen and (max-width:47.888em){
-  .hidn{display: none}
+  #contact{margin-top: 65em}
 } 
 
-@media only screen and (min-width:48em){
-  .hidn1{display: none}
-} 
-
-
-
-
-//=================
-// Mobile form
-//=================
-
-.form-mobile{margin-top: 65em;background-size: cover;}
-.form-mobile h2{text-align: center}
-.form-mobile label{color: rgb(101, 126, 236)}
 
