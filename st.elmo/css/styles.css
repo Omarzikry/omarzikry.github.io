@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+html, body {
+  background-color: #2E3133;
+  font-family: 'Lato',sans-serif;
+  font-size: 2em;
+}
+
+.center {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 20px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 3em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .sidenav a {
+    font-size: 5em;
+  }
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.open {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 48em) {
+  .open {
+    font-size: 50px;
+  }
+}
+
+.back {
+  background-image: url("../images/shop.jpeg");
+  background-size: cover;
+  transition: all 0.5 ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.back1 {
+  background-image: url("../images/shop1.jpeg");
+  background-size: cover;
+}
+
+.back2 {
+  background-image: url("../images/tea.jpeg");
+  background-size: cover;
+}
+
+.back3 {
+  background-image: url("../images/coffee1.jpeg");
+  background-size: cover;
+}
+
+.back4 {
+  background-image: url("../images/gift1.jpeg");
+  background-size: cover;
+}
+
+.back5 {
+  background-image: url("../images/service.jpeg");
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hero h1 {
+  color: white;
+  font-size: 4em;
+  letter-spacing: 5px;
+  color: #BFBFBF;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero {
+    height: 100vh;
+  }
+  .hero h1 {
+    font-size: 9em;
+    letter-spacing: 30px;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.grid1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+  grid-template-columns: 1fr 3fr;
+}
+
+.text {
+  background-color: whitesmoke;
+}
+
+.sunset {
+  width: 100%;
+  background-image: url("../images/sunset.jpeg");
+  background-size: cover;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 48em) {
+  .sunset {
+    height: 80vh;
+  }
+  .content {
+    width: 50%;
+    height: 100%;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.863);
+    text-align: center;
+    margin-left: 10%;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+  }
+  .content h2 {
+    font-size: 4em;
+  }
+  hr {
+    width: 50%;
+  }
+  .content p {
+    font-size: 2em;
+    padding: 1em 2em;
+  }
+}

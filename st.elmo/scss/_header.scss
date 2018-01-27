@@ -1,0 +1,12 @@
+.hero{display: flex;justify-content: center;align-items: center;height: 60vh;width: 100%;background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    .hero h1{color: white;font-size: 4em;letter-spacing: 5px;color: #BFBFBF}
+
+
+    @media only screen and (min-width:48em){
+        .hero{height: 100vh;}
+        .hero h1{font-size: 9em;letter-spacing: 30px}
+    }

@@ -1,0 +1,33 @@
+.sunset {
+  width: 100%;
+  background-image: url("../images/sunset.jpeg");
+  background-size: cover;
+  height: 50vh;
+}
+
+@media only screen and (min-width: 48em) {
+  .sunset {
+    height: 80vh;
+  }
+  .content {
+    width: 50%;
+    height: 100%;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.863);
+    text-align: center;
+    margin-left: 10%;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+  }
+  .content h2 {
+    font-size: 4em;
+  }
+  hr {
+    width: 50%;
+  }
+  .content p {
+    font-size: 2em;
+    padding: 1em 2em;
+  }
+}
