@@ -1,0 +1,18 @@
+.parallex1, .parallex2, .parallex3, .parallex4 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .parallex1 {
+    display: flex;justify-content: center;align-items: center;background-image: url("../images/parallex6.jpeg");
+    min-height: 70vh;
+  }
+  .parallex2{
+    display: flex;justify-content: center;align-items: center;background-image: url("../images/parallex3.jpeg");
+    min-height: 70vh;
+  }
+  .content1 h2{font-size: 6em;font-family: 'Alex Brush',sans-serif;color: (goldenrod+50);font-weight: 800}
+  .content1 h3{font-family: 'overpass',sans-serif;font-size: 4em;color: whitesmoke;font-weight: 700;letter-spacing: 7px}
+  .content1 h4{font-family: 'overpass',sans-serif;font-size: 4em;color: rgb(231, 220, 220);font-weight: 700;letter-spacing: 7px;text-align: center}

@@ -1,0 +1,27 @@
+.discover{width: 100%;height: 50vh;background-image: url('../images/discover5.jpg')}
+.discover h2{font-size: 2.5em;text-align: center;font-family: 'dancing script',sans-serif;color: goldenrod;padding-top: 0.5em}
+.discover p{font-size: 1.3em;text-align: center;font-family: 'lato',sans-serif;padding: 1em;line-height: 1.3em}
+.discover h3 {font-family: 'Overpass';font-size: 1.5em;text-align: center}
+.discover a {display: block;text-align: center;text-decoration: none;font-size: 1.3em;color: goldenrod}
+.discover-content{height: 100%;background-color: rgba(255, 255, 255, 0.76)}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:48em){
+.discover{width: 100%;height: 65vh;display: grid;grid-template-columns: 1fr 1fr;background: white;}
+.discover h2{font-size: 4em;text-align: center;font-family: 'dancing script',sans-serif;color: goldenrod;padding-top: 0.5em}
+.discover p{font-size: 2em;text-align: center;font-family: 'lato',sans-serif;padding: 1em;line-height: 1.3em}
+.discover h3 {font-family: 'Overpass';font-size: 2.5em;text-align: center;font-weight: 700}
+.discover a {display: block;text-align: center;text-decoration: none;font-size: 1.5em;color: goldenrod}
+.discover-img{display: flex;justify-content: center;align-items: center}
+
+}

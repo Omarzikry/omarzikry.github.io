@@ -1,3 +1,7 @@
 //base
-html,body{background-color: #2E3133;font-family: 'Lato',sans-serif;font-size: 2em}
+html,body{background-color: #2E3133;font-family: 'Lato',sans-serif;font-size: 2em;overflow-x: hidden}
 .center{width: 50%;margin-left: auto;margin-right: auto}
+
+@media only screen and (max-width:47.777em){
+    .hidden{display: none}
+}

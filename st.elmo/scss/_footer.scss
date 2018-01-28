@@ -1,0 +1,12 @@
+.footer{display: grid;grid-template-columns: 1fr 1fr;grid-column-gap: 1em;width: 100%;height: 30vh;background-color: (rgb(29, 28, 28)-50)}
+.locations-grid{display: grid;grid-template-columns: 1fr 1fr;grid-gap: 1em}
+.hours-grid{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: 1em}
+.locations h1,.hours h1{font-size: 2em;color: grey;font-family: 'lato',sans-serif;padding: 1em}
+.locations p,.hours p{font-size: 1.3em;color: gray;font-family: 'lato',sans-serif;padding-left: 2em}
+.copy-right{font-size: 15px;font-family: 'lato',sans-serif;padding: 1em}
+
+
+@media only screen and (max-width:47.777em){
+    .footer,.hours-grid,.locations-grid{grid-template-columns: 1fr}
+    .footer{height:100vh}
+}

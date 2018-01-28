@@ -1,9 +1,8 @@
-.hero{display: flex;justify-content: center;align-items: center;height: 60vh;width: 100%;background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.hero{display: flex;justify-content: center;align-items: center;height: 60vh;width: 100%;background-image: url('../images/back3.jpg');background-size: cover;
+    background-repeat: no-repeat
     }
     
-    .hero h1{color: white;font-size: 4em;letter-spacing: 5px;color: #BFBFBF}
+    .hero h1{font-size: 4em;letter-spacing: 5px;color: rgb(141, 135, 135)}
 
 
     @media only screen and (min-width:48em){
