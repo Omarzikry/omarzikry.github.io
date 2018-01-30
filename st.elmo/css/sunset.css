@@ -1,1 +1,53 @@
-.sunset{width:100%;background-image:url("../images/sunset.jpeg");background-size:cover;height:50vh}hr{width:50%}.sunset h2{text-align:center;font-size:2em}.content{background-color:rgba(255,255,255,0.692);height:100%}.content p{font-size:1.1em;text-align:center;line-height:1.3em;padding:1em}@media only screen and (min-width: 48em){.sunset{height:40em}.content{width:50%;height:100%;margin-right:auto;background-color:rgba(255,255,255,0.925);text-align:center;margin-left:10%;position:relative;bottom:50px;border-radius:10px}.content h2{font-size:4em}.content p{font-size:2em;padding:1em 2em;font-family:'lato',sans-serif;line-height:1.3em}}
+.sunset {
+  width: 100%;
+  background-image: url("../images/sunset.jpeg");
+  background-size: cover;
+  height: 50vh;
+}
+
+hr {
+  width: 50%;
+}
+
+.sunset h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.692);
+  height: 100%;
+}
+
+.content p {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.3em;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 48em) {
+  .sunset {
+    height: 40em;
+  }
+  .content {
+    width: 50%;
+    height: 100%;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.925);
+    text-align: center;
+    margin-left: 10%;
+    position: relative;
+    bottom: 50px;
+    border-radius: 10px;
+  }
+  .content h2 {
+    font-size: 4em;
+  }
+  .content p {
+    font-size: 2em;
+    padding: 1em 2em;
+    font-family: 'lato',sans-serif;
+    line-height: 1.3em;
+  }
+}
