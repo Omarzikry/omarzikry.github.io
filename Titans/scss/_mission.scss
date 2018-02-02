@@ -1,0 +1,43 @@
+.mission{
+    height:15em;
+    background-color: $deep-blue;
+    padding: 4em 10em;
+}
+.mission h1{
+    font-size: 3em;
+    text-align: center;
+    color: $white;
+}
+.mission p{
+    font-size: 1.5em;
+    text-align: center;
+    color: $white;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+.mission a{
+    text-decoration: none;
+    color: $white;
+    border: 2px solid $white;
+    padding: 0.3em;
+}
+.mission a:hover{
+    background-color: ($deep-blue/2);
+    border-color: ($deep-blue/2);
+    transition: all 0.4s ease;
+}
+p.link{
+    padding-top: 1em
+}
+
+
+@media only screen and (max-width:47.777em){
+    .mission{
+        height:27em;
+        padding: 1em;
+        padding-top: 3em
+    }
+}
+
+
+

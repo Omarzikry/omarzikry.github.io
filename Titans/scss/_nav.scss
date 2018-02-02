@@ -1,0 +1,138 @@
+//======
+// NAVBAR
+//======
+nav ul{
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    -webkit-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0em 3.5em;
+}
+nav a{
+    text-decoration: none;
+    color: $grey;
+    font-size: 2em;
+    &:hover{
+        color: ($grey/2);
+        transition: all 0.4s ease;
+    }
+}
+
+.logo{
+    color: $grey;
+    padding: 0.8em;
+    font-size: 2.5em
+}
+.handle{
+    width:100%;
+    box-sizing: border-box;
+    padding: 1em;
+    cursor: pointer;
+    color: $grey;
+    display: none
+}
+@media only screen and (min-width:48em){
+    .logo{
+        float: left;
+    }
+}
+
+
+
+
+@media only screen and (max-width:47em){
+    .logo{
+        display: block;
+        text-align: center
+    }
+    nav ul{
+        max-height: 0em;
+    }
+    .showing{
+        max-height: 20em;
+    }
+    nav li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em;
+    }
+    .handle{
+        display: block;
+        width: 100%;
+    }
+    .menu{
+        font-size: 1.3em
+    }
+    .bars{
+        float: right;
+        font-size: 1.3em
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//navbar fixed shrink
+
+#nav {
+    height: 70px;
+    background: transparent; // Transparent initial setting
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+  }
+  
+  #logo {
+    color: $grey;
+    padding: 1em;
+    font-size: 3em;
+    transition: all ease .5s;
+    color: goldenrod
+  }
+  #nav.shrink #logo{
+      padding: 0.2em;
+      font-size: 2em;
+  }
+  
+  #nav.shrink {
+    height: 55px;
+    transition: all ease .5s;
+    background: black;
+  }
+  #nav.shrink li{
+    padding-top: 0.7em
+  }
+  #nav.shrink a{
+      font-size: 2em;
+  }
+  #nav.shrink .clearfix{
+      display: none
+  }
+  
+  #nav.shrink #logo {
+    padding: 10px;
+    transition: all ease .5s;
+  }
+
+  #nav.shrink ul{
+      background-color: rgba(0, 0, 0, 0.801)
+  }
+  #nav.shrink .handle{
+      background-color: rgba(0, 0, 0, 0.637);
+  }

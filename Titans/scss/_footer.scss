@@ -1,0 +1,119 @@
+footer{
+    background-color: #222222;
+    color: $white
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30em;
+}
+.contact-left{
+    padding: 5em
+}
+.contact-left h1{
+    font-size: 5em;
+    color: goldenrod
+}
+.contact-left h2{
+    font-size: 3.5em;
+    padding-top: 1em
+}
+.contact-left p{
+    font-size: 2.5em;
+    padding-top: 0.7em
+}
+
+.contact-right{
+    padding: 5em
+}
+
+.links{
+    margin-left: 11em;
+    margin-bottom: 4em;
+    margin-top: 1.5em
+}
+
+.links a{
+    margin: 1em;
+}
+a.social{
+    color: $white
+}
+a.trial{
+    font-size: 2.5em;
+    color: $white;
+    border: 2px solid $white;
+    padding: 0.3em;
+    text-decoration: none
+}
+a.social:hover{
+    color: $white+30;
+    transition: all 0.4s ease
+}
+a.trial:hover{
+    color: $white+30;
+    border-color: $white+30;
+    transition: all 0.4s ease
+}
+
+.contact-right h1{
+    font-size: 4em;
+    padding: 1em;
+    padding-left: 2em
+}
+.copy{
+    font-size: 1.5em;
+    padding: 0.5em
+}
+footer span{
+    display: block;
+    margin-top: 2em;
+    margin-left: 12em
+}
+
+@media only screen and (max-width:47.777em){
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    .contact-left,.contact-right{
+        padding: 1em
+    }
+    .contact-left h1{
+        font-size: 3em;
+        text-align: center
+    }
+    .contact-left h2{
+        font-size: 2.5em;
+        padding-top: 1em;
+        text-align: center
+    }
+    .contact-left p{
+        font-size: 1.5em;
+        padding-top: 0.7em;
+        text-align: center
+    }
+    .links{
+        display: block;
+        text-align: center
+    }
+    .links a{
+        margin: 1em
+    }
+    a.trial{
+        font-size: 2em;
+        color: $white;
+        border: 2px solid $white;
+        padding: 0.5em;
+        text-decoration: none
+    }
+    footer span{
+        display: block;
+        margin-top: 2em;
+        text-align: center
+    }
+    .contact-right h1{
+        font-size: 2em;
+        padding: 1em;
+        text-align: center
+    }
+}

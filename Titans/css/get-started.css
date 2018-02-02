@@ -1,0 +1,97 @@
+.flex-square {
+  display: flex;
+  flex-direction: column;
+}
+
+a.square, a.square2 {
+  text-decoration: none;
+  display: block;
+}
+
+a.pink:hover {
+  background-color: #e2256a;
+}
+
+a.grey:hover {
+  background-color: #4a4a4a;
+}
+
+.pink, .grey {
+  width: 100%;
+  height: 30em;
+}
+
+.grey {
+  background-color: #404040;
+  color: #d4d0d0;
+}
+
+.pink {
+  background-color: #d81b60;
+  color: #212121;
+}
+
+.square-content {
+  padding: 2em;
+  padding-top: 7em;
+  font-family: 'lato',sans-serif;
+}
+
+.square-content h1 {
+  font-size: 1.7em;
+  padding-bottom: 1em;
+  font-weight: 700;
+}
+
+.square-content p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-right: 3em;
+  font-weight: 100;
+}
+
+.square-content h4 {
+  font-size: 1.5em;
+  padding-top: 1em;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 48em) {
+  .pink, .grey {
+    width: 50%;
+    height: 40em;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .square-content {
+    padding: 5em;
+    padding-top: 10em;
+  }
+  .square-content h1 {
+    font-size: 2.5em;
+    padding-bottom: 1em;
+  }
+  .square-content p {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    padding-right: 3em;
+  }
+  .grey .square-content p {
+    line-height: 1.5;
+  }
+  .grey .square-content h4 {
+    padding-top: 1.7em;
+  }
+  .square-content h4 {
+    font-size: 2em;
+    padding-top: 1em;
+  }
+  .flex-square {
+    display: flex;
+    flex-direction: row;
+  }
+}
