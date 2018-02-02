@@ -380,7 +380,7 @@ p.link {
 
 @media only screen and (max-width: 47.77em) {
   .parallex1 h1, .parallex2 h1, .parallex3 h1, .parallex4 h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 }
 
@@ -514,13 +514,15 @@ footer {
 }
 
 .contact-right {
-  padding: 5em;
+  padding: 4em;
+  padding-top: 12em;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .links {
-  margin-left: 11em;
-  margin-bottom: 4em;
-  margin-top: 1.5em;
+  display: block;
 }
 
 .links a {
@@ -551,9 +553,8 @@ a.trial:hover {
 }
 
 .contact-right h1 {
-  font-size: 4em;
-  padding: 1em;
-  padding-left: 2em;
+  font-size: 3em;
+  padding-top: 1em;
 }
 
 .copy {
@@ -584,7 +585,7 @@ footer span {
     text-align: center;
   }
   .contact-left p {
-    font-size: 1.5em;
+    font-size: 1em;
     padding-top: 0.7em;
     text-align: center;
   }
@@ -593,7 +594,7 @@ footer span {
     text-align: center;
   }
   .links a {
-    margin: 1em;
+    margin: 0,3em;
   }
   a.trial {
     font-size: 2em;
@@ -602,7 +603,7 @@ footer span {
     padding: 0.5em;
     text-decoration: none;
   }
-  footer span {
+  footer p {
     display: block;
     margin-top: 2em;
     text-align: center;
@@ -611,5 +612,12 @@ footer span {
     font-size: 2em;
     padding: 1em;
     text-align: center;
+  }
+  .contact-right {
+    padding: 1em;
+    padding-top: 1em;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 1fr;
   }
 }
