@@ -726,10 +726,14 @@ section.interview {
 }
 
 .interview-text p {
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: 'lato',sans-serif;
   line-height: 1.5em;
   text-align: center;
+}
+
+.interview-text p.link {
+  font-size: 1.3em;
 }
 
 .interview-text .link a {
@@ -752,7 +756,7 @@ section.interview {
   }
   .interview-text {
     padding-right: 90px;
-    padding-left: 25px;
+    padding-left: 60px;
     margin-top: -50px;
     z-index: 1;
   }
