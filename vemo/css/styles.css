@@ -1083,4 +1083,7 @@ a.social1 {
     margin: 0 auto;
     width: 70%;
   }
+  footer {
+    margin-top: 5em;
+  }
 }
