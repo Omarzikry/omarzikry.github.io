@@ -46,3 +46,9 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+//animate
+AOS.init({
+    duration: 1200,
+  })
