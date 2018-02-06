@@ -39,3 +39,10 @@ if(windowWidth > 768){
         if ($(document).scrollTop() < 350){
             $('header').show(500)
         }});
+
+        //go to top button
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Luckiest+Guy|Rammetto+One|lato");
+@import url("https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Luckiest+Guy|Rammetto+One|lato|Clicker+Script");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +47,17 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.small-only a {
+  border: 2px solid #181818;
+  padding: 0.2em;
+  color: black;
+}
+
+.small-only {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
 }
 
 nav ul, li {
@@ -511,9 +522,6 @@ p.small-only {
   .img img {
     width: 100%;
   }
-  .products-grid p.small-only a {
-    color: blue;
-  }
   p.small-only {
     display: block;
     font-family: 'lato',sans-serif;
@@ -619,7 +627,7 @@ section.review {
 }
 
 .new-text {
-  height: 420px;
+  height: 430px;
   background-color: #272525;
   color: #E8E8E8;
   font-family: 'Rammetto One',sans-serif;
@@ -629,7 +637,7 @@ section.review {
   font-size: 1em;
   text-align: center;
   font-weight: 200;
-  padding-top: 7em;
+  padding-top: 6em;
 }
 
 .new-text h3 {
@@ -709,7 +717,7 @@ section.interview {
   background-color: #272525;
   color: #E8E8E8;
   font-family: 'Rammetto One',sans-serif;
-  height: 420px;
+  height: 430px;
 }
 
 .interview-text h4 {
@@ -778,5 +786,301 @@ section.interview {
   }
   .pic3 img {
     width: 100%;
+  }
+  .interview-text {
+    height: 460px;
+  }
+  .interview-text .link a {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .interview-text {
+    height: 500px;
+  }
+}
+
+.new-products {
+  margin-top: 10em;
+}
+
+.new-products h1 {
+  font-family: 'Clicker Script',sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.new-products .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  margin-top: 3em;
+}
+
+.new-products h4 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'lato',sans-serif;
+}
+
+.new-products a {
+  text-decoration: none;
+  color: black;
+}
+
+.new-products .overlay1 a {
+  color: #E8E8E8;
+}
+
+.new-products p {
+  font-size: 1em;
+  text-align: center;
+  font-family: 'lato',sans-serif;
+  line-height: 1.5em;
+}
+
+.overlay5 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 0px;
+  transition: all 0.6s ease;
+}
+
+.overlay5 a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 0.3em;
+  text-align: center;
+  margin: 1em;
+  display: none;
+}
+
+.overlay5 a.explore {
+  margin-top: 80px;
+}
+
+.overlay5 a:hover, .overlay1 a:hover {
+  background-color: #fff;
+  color: #181818;
+  transition: all 0.35s ease;
+}
+
+.img:hover .overlay5 {
+  height: 250px;
+}
+
+@media only screen and (max-width: 47.766em) {
+  .new-products .grid {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .img img {
+    width: 100%;
+  }
+  .new-products h1 {
+    margin-bottom: 1em;
+  }
+  .new-products {
+    margin-top: 6em;
+  }
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10em;
+  font-family: 'lato',sans-serif;
+}
+
+.form h3 {
+  font-size: 1.7em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 5em;
+}
+
+.form-text {
+  background-color: #272525;
+  color: #E8E8E8;
+}
+
+.form p, .form h4 {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+input.text {
+  width: 100%;
+  height: 40px;
+}
+
+input.text:-moz-placeholder {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+input.text:-ms-input-placeholder {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+input.text::placeholder {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+input.submit {
+  background: none;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  border: 2px solid #E8E8E8;
+  font-size: 1.2em;
+  color: #E8E8E8;
+  cursor: pointer;
+}
+
+input.submit:hover {
+  background: #E8E8E8;
+  color: #181818;
+  width: 84%;
+  transition: all 0.4s ease;
+}
+
+@media only screen and (min-width: 48em) {
+  .pic4 {
+    z-index: 2;
+  }
+  .form-text {
+    margin-left: -90px;
+    z-index: 1;
+    padding-left: 90px;
+    margin-top: -90px;
+    padding-right: 70px;
+    height: 460px;
+  }
+}
+
+@media only screen and (max-width: 47.777em) {
+  .form {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .pic4 img {
+    width: 100%;
+  }
+  form {
+    width: 90%;
+  }
+  input.text:-moz-placeholder {
+    font-size: 1em;
+  }
+  input.text:-ms-input-placeholder {
+    font-size: 1em;
+  }
+  input.text::placeholder {
+    font-size: 1em;
+  }
+  input.submit {
+    margin-bottom: 1em;
+  }
+  .form h3 {
+    padding-top: 1em;
+  }
+  .form {
+    margin-top: 3em;
+  }
+}
+
+footer {
+  background: #272525;
+  margin-top: 10em;
+  color: #E8E8E8;
+  font-family: 'lato',sans-serif;
+  position: relative;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1em;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  color: #E8E8E8;
+  line-height: 1.5em;
+  max-width: 200px;
+}
+
+.footer h5 {
+  font-size: 1.2em;
+}
+
+a.top {
+  color: #E8E8E8;
+  font-size: 2.5em;
+  border: 2px solid #E8E8E8;
+  padding: 0.2em;
+  display: block;
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+a.top:hover {
+  color: #181818;
+  background: #E8E8E8;
+  transition: all 0.4s ease;
+}
+
+.copy {
+  padding: 1em;
+}
+
+a.social1 {
+  color: #E8E8E8;
+  font-size: 1.2em;
+  margin: 0 1em;
+}
+
+@media only screen and (min-width: 48em) {
+  div.social1 {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 47.777em) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.5em;
+  }
+  div.social1 {
+    margin: 0 auto;
+    width: 70%;
   }
 }

@@ -16,7 +16,7 @@ section.interview{
     background-color: $cool-black;
     color: #E8E8E8;
     font-family: 'Rammetto One',sans-serif;
-    height: 420px
+    height: 430px
 }
 .interview-text h4{
     font-size: 1em;
@@ -81,5 +81,17 @@ section.interview{
     }
     .pic3 img{
         width: 100%
+    }
+    .interview-text{
+        height: 460px;
+    }
+    .interview-text .link a{
+        font-size: 0.9em
+    }
+}
+
+@media only screen and (max-width:400px){
+    .interview-text{
+        height: 500px;
     }
 }

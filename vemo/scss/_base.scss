@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Luckiest+Guy|Rammetto+One|lato');
+@import url('https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Luckiest+Guy|Rammetto+One|lato|Clicker+Script');
 $cool-black: #272525;
 $cool-grey: #181818;
 $white: #E8E8E8;
+
+
+
+.small-only a{
+    border: 2px solid $cool-grey;
+    padding: 0.2em;
+    color: black
+}
+.small-only{
+    margin-top: 0.7em;
+    margin-bottom:0.7em
+}
