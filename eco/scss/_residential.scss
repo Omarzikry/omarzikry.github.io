@@ -1,0 +1,95 @@
+.pic2{
+    grid-area: pic
+}
+.text2{
+    grid-area: text
+}
+
+.residential{
+    height: 42em;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas: "pic text";
+    grid-template-columns: 60% 40%;
+    background-color: $beig;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: $white
+}
+.residential h2 a{
+    color: $white;
+    font-size: 5em;
+    letter-spacing: 0.01em;
+}
+.residential h2{
+    padding-top: 4em;
+    margin-left: -15em;
+    z-index: 2;
+    position: relative
+}
+.text2{
+    text-align: center;
+    background: $beig
+}
+.residential .text2 p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+    padding:1em 4.5em
+}
+.residential a.read{
+    color: $white;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding-right: 2em
+}
+.residential a:hover{
+    color: $yellow;
+    transition: color 0.4s ease;
+}
+
+.residential .inner-pic{
+    height: 40em;
+    width: 100%;
+    z-index: 1;
+}
+.pic2 .inner-pic{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/resedential5.jpeg);
+    margin-top: 2em
+}
+.pic2{
+    z-index: 1;
+}
+@media only screen and (max-width:47.77em){
+    .residential{
+        grid-template-columns: 1fr;
+        grid-template-areas: "text" "pic";
+        height: 15em
+    }
+    .residential .text2 p,.residential .text2 .read{
+        display: none
+    }
+    .residential .text2 h2 a{
+        font-size: 3em;
+    }
+    .residential h2{
+        margin-left: 0;
+    }
+    div.text2{
+        z-index: 9;
+        background: $beig;
+        margin-top: 17em;
+        height: 4em
+    }
+    .pic2 .inner-pic{
+        height: 100%;
+        margin-top: 0
+    }
+    .residential h2{
+        margin-top: -2em
+    }
+}

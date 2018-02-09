@@ -1,0 +1,93 @@
+.office{
+    height: 40em;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: $beig;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: $white
+}
+.office h2 a{
+    color: $white;
+    font-size: 5em;
+    letter-spacing: 0.01em;
+}
+.office h2{
+    padding-top: 7em
+}
+.text{
+    text-align: center;
+    padding: 1em
+}
+.office .text p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: left;
+    padding:1em 5em
+}
+.office .text a.read{
+    color: $white;
+    text-decoration: none;
+    font-size: 1.7em;
+    padding-right: 2em
+}
+.office .text a:hover{
+    color: $yellow;
+    transition: color 0.4s ease;
+}
+.office .pic .inner-pic{
+    height: 40em;
+    width: 100%;
+}
+.pic .inner-pic{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/office4.jpg)
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%
+}
+.flex p{
+    font-size: 5em
+}
+@media only screen and (max-width:47.77em){
+    .office{
+        grid-template-columns: 1fr;
+        height: 1em
+    }
+    .office .text p,.office .text .read{
+        display: none
+    }
+    .office .pic .inner-pic{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../images/office8.jpeg');
+        height: 100%
+    }
+    .office .text h2 a{
+        font-size: 3.5em;
+    }
+    .office h2{
+        padding: 0;
+    }
+    .office .text h2{
+        position: relative;
+        z-index: 2;
+    }
+    .office .text{
+        height: 4em
+    }
+    .office .pic{
+        margin-top: -2.5em;
+        height:15em;
+    }
+    .small-only p a{
+        color: $yellow;
+    }
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed');
+$white: #e6e6e6;
+$elegant: #9f9b74;
+$yellow: #FFDD17;
+$beig: (#574C52*1.7);
+$dark-beig: #574C52;
+
+.small-only{
+    @media only screen and (min-width:48em){
+        display: none
+    }
+}
+.small-only p a{
+    @media only screen and (min-width:48em){
+        display: none
+    }
+}

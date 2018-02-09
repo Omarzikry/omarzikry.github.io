@@ -1,0 +1,50 @@
+.investment{
+    height: 50em
+}
+.investment .pic .inner-pic{
+    height: 40em;
+    margin-top: 2em
+}
+.investment h2{
+    margin-right: -14em;
+    position: relative;
+    z-index: 2;
+}
+.investment .inner-pic{
+    background-image: url('../images/hero10.jpg')
+}
+@media only screen and (max-width:47.77em){
+    .investment{
+        grid-template-columns: 1fr;
+        //border: 2px solid red;
+        height: 15em
+    }
+    .investment .text{
+        margin-top: 21em;
+        height: 1em;
+        //border: 2px solid red;
+        z-index: 999;
+        background: $beig
+    }
+    .investment .text h2 a{
+        font-size: 3em;
+    }
+    .investment h2{
+        margin: 0;
+        margin-top: 0em
+    }
+    .investment .pic .inner-pic{
+        height: 25em;
+        margin-top: 0em;
+        height: 100%
+    }
+    .investment .inner-pic{
+        background-image: url('../images/hero10.jpg')
+    }
+    .investment .pic .inner-pic{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../images/hero10.jpg');
+        height: 100%
+    }
+}
