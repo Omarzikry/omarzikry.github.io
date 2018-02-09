@@ -3,7 +3,7 @@ $white: #e6e6e6;
 $elegant: #9f9b74;
 $yellow: #FFDD17;
 $beig: (#574C52*1.7);
-$dark-beig: #574C52;
+$dark-beig: (#574C52*1.7);
 
 .small-only{
     @media only screen and (min-width:48em){
@@ -14,4 +14,8 @@ $dark-beig: #574C52;
     @media only screen and (min-width:48em){
         display: none
     }
+}
+html,body{
+    overflow-x: hidden;
+    background-color: $beig
 }

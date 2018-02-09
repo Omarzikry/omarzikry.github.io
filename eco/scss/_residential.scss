@@ -68,10 +68,7 @@
     .residential{
         grid-template-columns: 1fr;
         grid-template-areas: "text" "pic";
-        height: 15em
-    }
-    .residential .text2 p,.residential .text2 .read{
-        display: none
+        height: 50em
     }
     .residential .text2 h2 a{
         font-size: 3em;
@@ -79,17 +76,27 @@
     .residential h2{
         margin-left: 0;
     }
-    div.text2{
-        z-index: 9;
-        background: $beig;
-        margin-top: 17em;
-        height: 4em
-    }
     .pic2 .inner-pic{
-        height: 100%;
         margin-top: 0
     }
-    .residential h2{
-        margin-top: -2em
+    .residential .text2 p{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-align: left;
+        padding:1em 1em
+    }
+    .residential a.read{
+        color: $white;
+        text-decoration: none;
+        font-size: 1.7em;
+        padding-right: 2em;
+        padding-bottom: 1em
+    }
+    .residential .inner-pic{
+        height: 30em;
+        margin-top: 1em
+    }
+    .pic2{
+        height: 30em
     }
 }

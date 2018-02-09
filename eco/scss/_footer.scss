@@ -1,0 +1,87 @@
+.footer{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 25em;
+    color: $white/1.1;
+}
+.contact h2{
+    font-size: 3em;
+    color: $yellow;
+    padding: 1em 0em;
+    text-align: center;
+}
+.contact p{
+    font-size: 2em;
+    line-height: 1.5em;
+    text-align: left;
+    padding-left: 5em
+}
+.social h2{
+    font-size: 3em;
+    color: $yellow;
+    padding: 1em 0em;
+    text-align: center;
+}
+.hours{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hours h3{
+    font-size: 2.5em;
+    text-align: center
+}
+.hours p{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 1em 0;
+}
+p.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.icon{
+    display: block;
+    margin: 1em;
+    width: 40px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: $yellow/1.3;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.3em
+}
+.icons a{
+    color: $white/1.1
+}
+.icon:hover{
+    width:50px;
+    height: 35px;
+    border-radius: 25px;
+    padding-top: 15px;
+    margin: 0.65em;
+    font-size: 1.5em;
+    background-color: $yellow/1.1
+}
+.copy{
+    font-size: 1.5em;
+    color: $white/1.1;
+    padding-bottom: 0.5em
+}
+@media only screen and (max-width:47.77em){
+    .footer{
+        grid-template-columns: 1fr;
+        height: 50em
+    }
+    .hours{
+        grid-template-columns: 1fr;
+    }
+    .contact p{
+        text-align: center;
+        padding:0 0.5em;
+        font-size: 1.7em;
+    }
+}

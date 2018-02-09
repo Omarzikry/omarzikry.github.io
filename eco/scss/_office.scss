@@ -47,28 +47,24 @@
     background-size: cover;
     background-image: url(../images/office4.jpg)
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%
-}
-.flex p{
-    font-size: 5em
-}
 @media only screen and (max-width:47.77em){
     .office{
         grid-template-columns: 1fr;
-        height: 1em
-    }
-    .office .text p,.office .text .read{
-        display: none
+        height: 60em;
     }
     .office .pic .inner-pic{
+        height: 32em;
+    }
+    /*.office .pic .inner-pic{
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('../images/office8.jpeg');
         height: 100%
+    }*/
+    .office .pic{
+       margin: 0;
+       padding: 0;
+       height: 30em
     }
     .office .text h2 a{
         font-size: 3.5em;
@@ -76,18 +72,10 @@
     .office h2{
         padding: 0;
     }
-    .office .text h2{
-        position: relative;
-        z-index: 2;
-    }
-    .office .text{
-        height: 4em
-    }
-    .office .pic{
-        margin-top: -2.5em;
-        height:15em;
-    }
-    .small-only p a{
-        color: $yellow;
+    .office .text p{
+        font-size: 1.5em;
+        line-height: 1.5em;
+        text-align: left;
+        padding:1em 0em
     }
 }

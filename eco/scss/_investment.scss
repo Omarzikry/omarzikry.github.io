@@ -11,17 +11,16 @@
     z-index: 2;
 }
 .investment .inner-pic{
-    background-image: url('../images/hero10.jpg')
+    background-image: url('../images/building.jpeg')
 }
 @media only screen and (max-width:47.77em){
     .investment{
         grid-template-columns: 1fr;
         //border: 2px solid red;
-        height: 15em
+        height:70em;
     }
     .investment .text{
         margin-top: 21em;
-        height: 1em;
         //border: 2px solid red;
         z-index: 999;
         background: $beig
@@ -37,9 +36,6 @@
         height: 25em;
         margin-top: 0em;
         height: 100%
-    }
-    .investment .inner-pic{
-        background-image: url('../images/hero10.jpg')
     }
     .investment .pic .inner-pic{
         background-size: cover;
