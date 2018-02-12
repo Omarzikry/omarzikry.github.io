@@ -442,6 +442,10 @@ a.social1 {
   }
 }
 
+.products-grid h4 {
+  margin-top: 1em;
+}
+
 .products-grid {
   display: -ms-grid;
   display: grid;

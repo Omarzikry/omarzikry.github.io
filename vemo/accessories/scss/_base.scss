@@ -3,9 +3,7 @@ $cool-black: #272525;
 $cool-grey: #181818;
 $white: #E8E8E8;
 
-.products-grid h4{
-    margin-top: 1em;
-    }
+
 
 .small-only a{
     border: 2px solid $cool-grey;
@@ -21,4 +19,9 @@ $white: #E8E8E8;
         width: 100em;
         margin: 0 auto;
     }
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
+
