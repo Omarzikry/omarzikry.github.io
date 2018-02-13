@@ -28,7 +28,7 @@ input.text{
     height: 40px;
 }
 input.text:-moz-placeholder{
-    font-size: 1.5em;
+    //font-size: 1.5em;
     text-align: center
 }
 input.text:-ms-input-placeholder{
@@ -36,7 +36,7 @@ input.text:-ms-input-placeholder{
     text-align: center
 }
 input.text::placeholder{
-    font-size: 1.5em;
+    //font-size: 1.5em;
     text-align: center
 }
 input.submit{
@@ -55,6 +55,9 @@ input.submit:hover{
     color: $cool-grey;
     width: 84%;
     transition: all 0.4s ease;
+}
+input{
+    font-size: 1.5em
 }
 
 @media only screen and (min-width:48em){
