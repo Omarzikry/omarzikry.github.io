@@ -1,0 +1,426 @@
+.header h1{
+    padding-top: 2em;
+    color: $cool-grey;
+    font-size: 3em;
+    font-family: 'Rammetto One',sans-serif;
+    text-align: center;
+    @media only screen and (max-width:47.77em){
+        font-size: 2em
+    }
+}
+.header p{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 3em;
+    @media only screen and (max-width:47.77em){
+        padding: 0 1em;
+    }
+}
+
+.products-grid h4{
+    margin-top: 1em;
+    }
+
+.products-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding-top: 3em
+}
+.products-grid a{
+    text-decoration: none;
+    color: black
+}
+.img{
+    position: relative
+}
+.overlay1{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 300px;
+height: 0px;
+transition: all 0.3s ease;
+}
+.overlay1 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+a.explore{
+    margin-top: 110px
+}
+.overlay1 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+.img:hover .overlay1{
+    height: 250px
+}
+.img:hover a{
+display: block
+}
+.product1 h4,.product2 h4,.product3 h4,.product4 h4{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'lato',sans-serif;
+}
+.product1 p,.product2 p,.product3 p,.product4 p{
+    font-size: 1em;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em
+}
+
+
+//overlay2
+.overlay2{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 300px;
+height: 0px;
+transition: all 0.3s ease;
+}
+
+.overlay2 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+.overlay2 a.explore{
+    margin-top: 70px
+}
+.overlay2 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+
+.img:hover .overlay2{
+    height: 180px
+}
+
+
+//overlay3
+.overlay3{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 0px;
+    transition: all 0.3s ease;
+    }
+    .overlay3 a{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 0.3em;
+        text-align: center;
+        margin: 1em;
+        display: none
+    }
+    .overlay3 a.explore{
+        margin-top: 70px
+    }
+    .overlay3 a:hover{
+        background-color: #fff;
+        color: $cool-grey;
+        transition: all 0.35s ease;
+    }
+    .img:hover .overlay3{
+        height: 180px
+    }
+    //overlay4
+
+    .overlay4{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 300px;
+        height: 0px;
+        transition: all 0.3s ease;
+        }
+        
+        .overlay4 a{
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #fff;
+            padding: 0.3em;
+            text-align: center;
+            margin: 1em;
+            display: none
+        }
+        .overlay4 a.explore{
+            margin-top: 110px
+        }
+        .overlay4 a:hover{
+            background-color: #fff;
+            color: $cool-grey;
+            transition: all 0.35s ease;
+        }
+        
+        .img:hover .overlay4{
+            height: 250px
+        }
+        
+
+        //overlay5
+
+        .overlay5{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 300px;
+            height: 0px;
+            transition: all 0.3s ease;
+            }
+            
+            .overlay5 a{
+                font-size: 1.5em;
+                color: white;
+                text-decoration: none;
+                border: 2px solid #fff;
+                padding: 0.3em;
+                text-align: center;
+                margin: 1em;
+                display: none
+            }
+            .overlay5 a.explore{
+                margin-top: 70px
+            }
+            .overlay5 a:hover{
+                background-color: #fff;
+                color: $cool-grey;
+                transition: all 0.35s ease;
+            }
+            
+            .img:hover .overlay5{
+                height: 180px
+            }
+
+
+            //overlay6
+
+            .overlay6{
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 300px;
+                height: 0px;
+                transition: all 0.3s ease;
+                }
+                
+                .overlay6 a{
+                    font-size: 1.5em;
+                    color: white;
+                    text-decoration: none;
+                    border: 2px solid #fff;
+                    padding: 0.3em;
+                    text-align: center;
+                    margin: 1em;
+                    display: none
+                }
+                .overlay6 a.explore{
+                    margin-top: 170px
+                }
+                .overlay6 a:hover{
+                    background-color: #fff;
+                    color: $cool-grey;
+                    transition: all 0.35s ease;
+                }
+                
+                .img:hover .overlay6{
+                    height: 350px
+                }
+
+                //overlay 7
+
+                .overlay7{
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    width: 300px;
+                    height: 0px;
+                    transition: all 0.3s ease;
+                    }
+                    
+                    .overlay7 a{
+                        font-size: 1.5em;
+                        color: white;
+                        text-decoration: none;
+                        border: 2px solid #fff;
+                        padding: 0.3em;
+                        text-align: center;
+                        margin: 1em;
+                        display: none
+                    }
+                    .overlay7 a.explore{
+                        margin-top: 130px
+                    }
+                    .overlay7 a:hover{
+                        background-color: #fff;
+                        color: $cool-grey;
+                        transition: all 0.35s ease;
+                    }
+                    
+                    .img:hover .overlay7{
+                        height: 270px
+                    }
+
+                    //overlay8
+
+                    .overlay8{
+                        position: absolute;
+                        left: 0px;
+                        bottom: 0px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 300px;
+                        height: 0px;
+                        transition: all 0.3s ease;
+                        }
+                        
+                        .overlay8 a{
+                            font-size: 1.5em;
+                            color: white;
+                            text-decoration: none;
+                            border: 2px solid #fff;
+                            padding: 0.3em;
+                            text-align: center;
+                            margin: 1em;
+                            display: none
+                        }
+                        .overlay8 a.explore{
+                            margin-top: 70px
+                        }
+                        .overlay8 a:hover{
+                            background-color: #fff;
+                            color: $cool-grey;
+                            transition: all 0.35s ease;
+                        }
+                        
+                        .img:hover .overlay8{
+                            height: 180px
+                        }
+
+
+                        //overlay9
+
+                    .overlay9{
+                        position: absolute;
+                        left: 0px;
+                        bottom: 0px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 400px;
+                        height: 0px;
+                        transition: all 0.4s ease;
+                        }
+                        
+                        .overlay9 a{
+                            font-size: 1.5em;
+                            color: white;
+                            text-decoration: none;
+                            border: 2px solid #fff;
+                            padding: 0.3em;
+                            text-align: center;
+                            margin: 1em;
+                            display: none
+                        }
+                        .overlay9 a.explore{
+                            margin-top: 230px
+                        }
+                        .overlay9 a:hover{
+                            background-color: #fff;
+                            color: $cool-grey;
+                            transition: all 0.35s ease;
+                        }
+                        
+                        .img:hover .overlay9{
+                            height: 450px
+                        }
+
+                        //overlay10
+
+                    .overlay10{
+                        position: absolute;
+                        left: 0px;
+                        bottom: 0px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 426px;
+                        height: 0px;
+                        transition: all 0.4s ease;
+                        }
+                        
+                        .overlay10 a{
+                            font-size: 1.5em;
+                            color: white;
+                            text-decoration: none;
+                            border: 2px solid #fff;
+                            padding: 0.3em;
+                            text-align: center;
+                            margin: 1em;
+                            display: none
+                        }
+                        .overlay10 a.explore{
+                            margin-top: 280px
+                        }
+                        .overlay10 a:hover{
+                            background-color: #fff;
+                            color: $cool-grey;
+                            transition: all 0.35s ease;
+                        }
+                        
+                        .img:hover .overlay10{
+                            height: 640px
+                        }
+
+//small screens
+    p.small-only{
+        display: none
+    }
+    @media only screen and (max-width:47.766em){
+        .products-grid{
+            grid-template-columns: 1fr;
+            width: 80%;
+            margin: 0 auto
+        }
+        .img img{
+            width: 100%
+        }
+        p.small-only{
+            display: block;
+            font-family: 'lato',sans-serif;
+            font-size: 1.3em
+        }
+    }
+
+    .grid2{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media only screen and (max-width:47.77em){
+            grid-template-columns: 1fr;
+        }
+    }
