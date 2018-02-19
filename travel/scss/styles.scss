@@ -7,6 +7,9 @@ body{background-color: rgb(238, 232, 232)}
     .left{margin-left: auto !important;}
 .right{margin-right: auto !important;}
 }
+:focus{
+    outline: 0
+}
 @import 'navbar';
 @import 'sections';
 @import 'hero';
