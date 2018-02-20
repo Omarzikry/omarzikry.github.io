@@ -55,3 +55,12 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+
+  //light box
+
+  /*lightbox.option({
+    maxHeight: 800,
+    maxWidth: 800
+  })*/

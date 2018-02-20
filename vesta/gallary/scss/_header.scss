@@ -75,7 +75,7 @@ header{
       margin-top: -1em
   }
   #nav.shrink {
-    height: 25px;
+    height: 20px;
     transition: all ease .5s;
     background: rgba(0, 0, 0, 0.671);
   }
@@ -91,7 +91,7 @@ header{
   
   #nav.shrink #logo,#nav.shrink #logo1  {
     transition: all ease .5s;
-    font-size: 2em
+    font-size: 1.5em
   }
 
   /*#nav.shrink ul{
@@ -110,7 +110,8 @@ header{
           display: block
       }
       nav ul{
-          display: block
+          display: block;
+          background-color: black
       }
       nav ul li{
           display: block;
@@ -158,6 +159,7 @@ header{
         -ms-transition: max-height 0.4s ease-in ;
         -moz-transition: max-height 0.4s ease-in;
         transition: max-height 0.4s ease-in;
+        margin-top: -3px
     }
   }
   .clearfix{
