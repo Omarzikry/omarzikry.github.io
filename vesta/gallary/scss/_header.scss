@@ -68,13 +68,7 @@ header{
     transition: all ease .5s;
     font-family: 'Elsie',sans-serif;
   }
-  nav.shrink #logo img{
-      height: 150px;
-      width: 150px;
-      margin-left: 5em;
-      margin-top: -1em
-  }
-  #nav.shrink {
+   #nav.shrink {
     height: 20px;
     transition: all ease .5s;
     background: rgba(0, 0, 0, 0.671);
@@ -91,7 +85,7 @@ header{
   
   #nav.shrink #logo,#nav.shrink #logo1  {
     transition: all ease .5s;
-    font-size: 1.5em
+    font-size: 1.3em
   }
 
   /*#nav.shrink ul{
