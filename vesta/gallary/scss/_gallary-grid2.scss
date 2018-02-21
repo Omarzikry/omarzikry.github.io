@@ -1,5 +1,5 @@
 .content{
-    height: 50vh;
+    height: 55vh;
     filter: grayscale(100%);
     transition: all 0.4s ease;
     position: relative;
@@ -26,6 +26,18 @@
 }
 .content6{
     background-image: url('../tatyana/tatyana25.jpg');
+    background-size: cover;
+}
+.content7{
+    background-image: url('../Newstore/newstore9.jpeg');
+    background-size: cover;
+}
+.content8{
+    background-image: url('../images/newline.jpg');
+    background-size: cover;
+}
+.content9{
+    background-image: url('../images/malemodel.jpeg');
     background-size: cover;
 }
 .content:hover{
