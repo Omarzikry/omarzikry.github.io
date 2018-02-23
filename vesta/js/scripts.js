@@ -17,7 +17,7 @@
             'background',
             backgrounds[current = ++current % backgrounds.length]
             );
-            
+            header.css('background-size', 'cover');
             setTimeout(nextBackground, 5000);
             }
             setTimeout(nextBackground, 5000);
