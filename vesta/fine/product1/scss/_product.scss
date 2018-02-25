@@ -1,0 +1,90 @@
+.svg{
+    height: 100px;
+    width: 100px;
+    fill: white;
+    padding-top: 3em;
+}
+.product-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+}
+.product1{
+    background-image: url('../images/t-shirta1.jpg');
+    background-position: center;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.wrapper{
+    height: 100vh
+}
+.product2{
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    padding: 2em;
+    box-sizing: border-box;
+    color: white;
+    padding-top: 6em;
+}
+.product2 h2{
+    font-size: 3em;
+    padding-bottom: 1em
+}
+.product2 h3{
+    font-size: 2em;
+    padding: 1em 0;
+}
+.product2 p{
+    font-size: 1.2em;
+    color: rgb(58, 56, 56)
+}
+.svg:hover{
+    fill: grey;
+}
+.product1 .overlayit{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.product1 .overlayit h2{
+    font-size: 3em;
+    color: rgb(173, 169, 169);
+    font-weight: 550;
+}
+.product1:hover .overlayit{
+    opacity: 1
+}
+@media only screen and (max-width:47.77em){
+    .product-grid{
+        grid-template-columns: 1fr;
+    }
+    .product1{
+        height: 60vh;
+        margin: 2em
+    }
+    .wrapper{
+        height: 60vh
+    }
+    .product2{
+        height: 65vh;
+        padding-top: 0.5em;
+    }
+    .product2 h2{
+        font-size: 2em;
+    }
+    .product2 h3{
+        font-size: 1.3em;
+    }
+    .product2 p{
+        font-size: 1em;
+    }
+}
