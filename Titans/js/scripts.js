@@ -16,3 +16,6 @@ $(window).scroll(function(){
 $('.handle').on('click',function(){
     $('nav ul').toggleClass('showing')
 })
+
+//remove the seconed vertical scroll bar
+$('body').css('overflow', 'hidden');

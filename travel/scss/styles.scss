@@ -2,7 +2,7 @@ $light-blue: #63E1FF;
 $cool-grey: #757575;
 $dark-grey: #212121;
 //base
-body{background-color: rgb(238, 232, 232)}
+body{background-color: rgb(238, 232, 232);overflow-x: hidden;}
 @media only screen and (min-width:48em){
     .left{margin-left: auto !important;}
 .right{margin-right: auto !important;}
