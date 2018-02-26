@@ -7,12 +7,12 @@
 //======
 
 body{font-family: 'lato',sans-serif;background: #9C9C9C !important;}
-h1{color: #4F4F4F !important;font-family: 'rubik',sans-serif;font-size: 70px;font-weight: 700;text-align: center;padding: 25px;
+h2{color: #4F4F4F !important;font-family: 'rubik',sans-serif;font-size: 70px;font-weight: 700;text-align: center !important;padding: 25px;
 @media only screen and (max-width:47.777em){
     margin-top: 1em
 }
 }
-h2{margin-left: 10px;color: #4F4F4F;font-size: 45px;font-family: 'rubik',sans-serif;font-weight: 600;padding: 20px;text-align: justify}
+h3{margin-left: 10px;color: #4F4F4F;font-size: 45px;font-family: 'rubik',sans-serif;font-weight: 600;padding: 20px;text-align: justify}
 p{margin-left: 10px;font-size: 25px;padding: 10px;text-align: justify;color: #DBDBDB !important;}
 span{font-weight: 700}
 .container{width: 95%}
@@ -39,7 +39,7 @@ span{font-weight: 700}
 @media only screen and (max-width:47.777em){
     img{margin-left: 18%}
     .center{margin-bottom: 30px}
-    h2{font-size: 40px;text-align: justify}
+    h2{font-size: 40px;}
     p{font-size: 20px}
 }
 @media only screen and (width:600px){
