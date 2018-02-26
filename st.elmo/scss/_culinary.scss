@@ -1,8 +1,8 @@
 .culinary{width:100%;height: 120vh;background-color: whitesmoke;display: grid;grid-template-columns: 1fr;}
 .flex-img1{display: flex;justify-content: center;align-items: center}
 .culinary-img{display: grid;grid-template-columns: 1fr 1fr;grid-column-gap: 2em}
-.culinary-text h1{font-size: 2.5em;text-align: center;font-family: 'dancing script',sans-serif;color: goldenrod;padding-top: 0.5em;}
-.culinary-text h2{font-family: 'Overpass';font-size: 1.5em;text-align: center;font-weight: 700}
+.culinary-text h2{font-size: 2.5em;text-align: center;font-family: 'dancing script',sans-serif;color: goldenrod;padding-top: 0.5em;}
+.culinary-text h3{font-family: 'Overpass';font-size: 1.5em;text-align: center;font-weight: 700}
 .culinary-text p{font-size: 1.1em;text-align: center;font-family: 'lato',sans-serif;padding: 1em;line-height: 1.3em}
 .culinary-text a{display: block;text-align: center;text-decoration: none;font-size: 1.5em;color: goldenrod}
 
@@ -18,8 +18,8 @@
 @media only screen and (min-width:48em){
 .culinary{height: 32em;grid-template-columns: 1fr 1fr;}
 .culinary-img{grid-column-gap: 3em}
-.culinary-text h1{font-size: 4em;}
-.culinary-text h2{font-size: 2.5em;}
+.culinary-text h2{font-size: 4em;}
+.culinary-text h3{font-size: 2.5em;}
 .culinary-text p{font-size: 1.5em;}
 .culinary-text a{display: block;text-align: center;text-decoration: none;font-size: 1.5em;color: goldenrod}
 }
