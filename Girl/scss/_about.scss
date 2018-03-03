@@ -1,0 +1,41 @@
+.about h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #444444
+}
+.about p{
+    color: #777777;
+    line-height: 1.5em;
+    padding: 0.4em 0;
+}
+.about .about-row{
+    padding: 3em 0em;
+}
+.icons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0
+}
+.icons li:nth-child(1){
+    padding: 0;
+    padding-right: 0.5em;
+}
+.icons li{
+    padding: 0 0.5em;
+    list-style: none;
+    text-align: center;
+}
+.icons li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #777777;
+    color: #777777;
+    padding: 0.3em;
+}
+.icons li a:hover{
+    background-color: #af2424;
+    color: #fff
+}

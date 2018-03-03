@@ -1,0 +1,25 @@
+html,body{
+    overflow-x: hidden;
+    color: black;
+    font-family: 'lato','roboto',sans-serif;
+    background-color: gray;
+}
+*{
+    box-sizing: border-box;
+}
+.fixed{
+    position: fixed;
+    width: 100%
+}
+$grey: (#83898F/1.5);
+$white: #FEFEFE;
+
+
+
+@font-face {
+    font-family: brandon ;
+    src: url('../fonts/Brandon_bld.otf');
+}
+.hidden{
+    display: none
+}
