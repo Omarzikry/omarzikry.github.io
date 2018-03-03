@@ -1,0 +1,26 @@
+.hero{
+  height: 100vh;
+  background-image: url('../images/hero3.jpeg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.hero .text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0E1618;
+}
+.hero h1{
+  font-family: 'Archivo Black',sans-serif;
+  font-size: 4em;
+  letter-spacing: 3px;
+}
+.hero h2{
+  font-size: 2em;
+  padding-top: 5em;
+  color: #FEFEFE
+}
