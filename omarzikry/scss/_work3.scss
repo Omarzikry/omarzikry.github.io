@@ -1,5 +1,5 @@
 .work3{
-    height: 40em;
+    height: auto;
     text-align: center
 }
 .work3 h3{
@@ -8,4 +8,52 @@
     font-size: 2.5em;
     letter-spacing: 1px;
     padding-top: 1.5em;
+}
+.work3 .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
+.work3 .project img{
+    width: 50%;
+}
+.work3 .project h4{
+    font-size: 2em;
+    color: $black;
+}
+.work3 .project p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 1em 5em;
+    font-weight: 600;
+    color: $light-grey;
+}
+.project .btn{
+    display: block;
+    width: 200px;
+    margin: 2em 1em;
+    color: $rose;
+    padding: 0.3em;
+    border: 2px solid $rose;
+    border-radius: 3px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.7s ease
+}
+.btn:hover{
+    color: $white;
+    background-color: $rose
+}
+.btns{
+    display: flex
+}
+
+@media only screen and (max-width:47.777em){
+    .work3 .project p{
+        padding: 1em 0.5em;
+    }
+    .project .btn{
+        width: 150px
+    }
 }
