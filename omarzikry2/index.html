@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Omar Zikry</title>
     <link rel="shortcut icon" href="images/omar2.jpg" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Archivo+Black|Karma:400,700|Mukta+Malar:700|Playfair+Display:700"
+    <link href="https://fonts.googleapis.com/css?family=Lato|Abril+Fatface|Archivo+Black|Montserrat:700|Karma:400,700|Mukta+Malar:700|Playfair+Display:700"
         rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -20,73 +19,117 @@
     <header>
         <!--this is for preloading background images-->
         <div class="hidden">
-                <script type="text/javascript">
-                        var images = new Array()
-                        function preload() {
-                            for (i = 0; i < preload.arguments.length; i++) {
-                                images[i] = new Image()
-                                images[i].src = preload.arguments[i]
-                            }
-                        }
-                        preload(
-                            "images/nav.jpeg",
-                            "images/nav2.jpeg",
-                            "images/nav9.jpeg",
-                            "images/nav14.jpeg",
-                            "images/nav10.jpeg",
-                        )
+            <script type="text/javascript">
+                var images = new Array()
+                function preload() {
+                    for (i = 0; i < preload.arguments.length; i++) {
+                        images[i] = new Image()
+                        images[i].src = preload.arguments[i]
+                    }
+                }
+                preload(
+                    "images/nav.jpeg",
+                    "images/nav2.jpeg",
+                    "images/nav9.jpeg",
+                    "images/nav14.jpeg",
+                    "images/nav10.jpeg",
+                )
                     //--><!]]>
-                </script>
-            </div>
-            <!--thats awsome I fucking did it-->
+            </script>
+        </div>
+        <!--thats awsome I fucking did it-->
         <div class="fixed">
-                <div class="nav-btn">
-                    <div class="dash one"></div>
-                    <div class="dash two"></div>
-                </div>
-                <nav id="mySidenav">
-                    <ul class="vertical">
-                        <li>
-                            <a id="link1" class="link hover-2" href="/">HOME</a>
-                        </li>
-                        <li>
-                            <a id="link2" class="link hover-2" href="work">FEATURED WORK</a>
-                        </li>
-                        <li>
-                            <a id="link3" class="link hover-2" href="about">ABOUT</a>
-                        </li>
-                        <li>
-                            <a id="link4" class="link hover-2" href="contact">CONTACT</a>
-                        </li>
-                        <li>
-                            <a id="link5" class="link hover-2" href="#">C.V</a>
-                        </li>
-                    </ul>
-                    <ul class="horizontal">
-                        <li>
-                            <a class="link hover-1" href="https://www.linkedin.com/in/omarzikry/" target="_blank">LINKDIN</a>
-                        </li>
-                        <li>
-                            <a class="link hover-1" href="https://www.upwork.com/o/profiles/users/_~0104e66bb956c7b7f7/" target="_blank">UPWORK</a>
-                        </li>
-                        <li>
-                            <a class="link hover-1" href="https://www.facebook.com/IAmOmarZikry" target="_blank">FACEBOOK</a>
-                        </li>
-                        <li>
-                            <a class="link hover-1" href="https://codepen.io/Omarzikry" target="_blank">CODEPEN</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="nav-btn">
+                <div class="dash one"></div>
+                <div class="dash two"></div>
             </div>
-            <div class="hero">
+            <nav id="mySidenav">
+                <ul class="vertical">
+                    <li>
+                        <a id="link1" class="link hover-2" href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a id="link2" class="link hover-2" href="work">FEATURED WORK</a>
+                    </li>
+                    <li>
+                        <a id="link3" class="link hover-2" href="about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a id="link4" class="link hover-2" href="contact">CONTACT</a>
+                    </li>
+                    <li>
+                        <a id="link5" class="link hover-2" href="#">C.V</a>
+                    </li>
+                </ul>
+                <ul class="horizontal">
+                    <li>
+                        <a class="link hover-1" href="https://www.linkedin.com/in/omarzikry/" target="_blank">LINKDIN</a>
+                    </li>
+                    <li>
+                        <a class="link hover-1" href="https://www.upwork.com/o/profiles/users/_~0104e66bb956c7b7f7/" target="_blank">UPWORK</a>
+                    </li>
+                    <li>
+                        <a class="link hover-1" href="https://www.facebook.com/IAmOmarZikry" target="_blank">FACEBOOK</a>
+                    </li>
+                    <li>
+                        <a class="link hover-1" href="https://codepen.io/Omarzikry" target="_blank">CODEPEN</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
             <div class="text">
                 <h1>OMAR ZIKRY</h1>
-                <h2>I'm a front‑end developer focused on crafting clean  & user‑friendly experiences.</h2>
+                <h2>I'm a front‑end developer focused on crafting clean & user‑friendly experiences.</h2>
             </div>
+        </div>
+        <a href="#work">
+            <div class="arrow">
+                <span>
+                    <i class="fas fa-chevron-down"></i>
+                </span>
             </div>
+        </a>
     </header>
     <main>
-
+        <div class="intro" id="work">
+            <h3>PORTFOLIO</h3>
+            <p>Below you can see some projects I've been working on lately.I divide each project into four follow-up areas:
+                comprehensive research, wireframing, design & development. This process allows me to create great product
+                with client goals in mind.</p>
+        </div>
+        <div class="work">
+            <a href="#">
+                <div class="project">
+                    <div class="wrapper">
+                        <div class="panel">
+                            <div class="panel__img-col">
+                                <img src="images/model6.jpg" alt="" class="panel__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4>VESTA</h4>
+                        <p>Exeptional branding and ecommerce website template</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                    <div class="project">
+                        <div class="wrapper img2">
+                            <div class="panel">
+                                <div class="panel__img-col">
+                                    <img src="images/model7.jpg" alt="" class="panel__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4>VESTA</h4>
+                            <p>Exeptional branding and ecommerce website template</p>
+                        </div>
+                    </div>
+                </a>
+        </div>
     </main>
 
 
@@ -96,6 +139,8 @@
     <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="js/aos.js"></script>
     <script src="js/scripts.js"></script>
 </body>

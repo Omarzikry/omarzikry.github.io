@@ -1,18 +1,31 @@
+$grey: (#83898F/1.5);
+$white: #FEFEFE;
+$black: #3B3838;
+$light-grey: (rgb(88, 88, 88)*1.5);
 html,body{
-    overflow-x: hidden;
     color: black;
     font-family: 'lato','roboto',sans-serif;
-    background-color: gray;
+    background-color: $white;
+    font-feature-settings: "kern" 1,"liga" 1,"frac" 1, "lnum" 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none
 }
 *{
     box-sizing: border-box;
+}
+*:focus{
+    outline: 0
 }
 .fixed{
     position: fixed;
     width: 100%
 }
-$grey: (#83898F/1.5);
-$white: #FEFEFE;
 
 
 
@@ -26,8 +39,4 @@ $white: #FEFEFE;
 .black{
     background-color: black !important;
     transition: all 0.2s ease
-}
-main{
-    height:110vh;
-    background-color: white;
 }
