@@ -132,7 +132,7 @@ main{
   .splash {
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -192,7 +192,7 @@ main{
         backface-visibility: visible;
         rect {
           width: 100%;
-          height: 100%;
+          height: 100vh;
           fill: $yellow;
           stroke: 0;
           -webkit-clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);

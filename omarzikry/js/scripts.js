@@ -50,10 +50,20 @@ $(document).ready(function() {
     $('.nav-btn').click(function(){
         $('nav').toggleClass('showing');
         $('.nav-btn').toggleClass('close');
-        $('.text').toggleClass('nav-showing');
+        $('.text h1').toggleClass('nav-showing');
+        $('.text h2').toggleClass('nav-showing');
+        $('.text button').toggleClass('nav-showing');
     })
 });
-
+//change navigation icon color on scrolling
+$(window).scroll(function(){
+    if ($(document).scrollTop() > 650){
+        $('div.dash').addClass('black');
+    }
+    else{
+        $('div.dash').removeClass('black');
+    }
+});
 
 //============
 // Animation
