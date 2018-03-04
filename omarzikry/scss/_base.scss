@@ -10,6 +10,9 @@ html,body{
 *{
     box-sizing: border-box;
 }
+*:focus{
+    outline: 0;
+}
 body{
     overflow-x: hidden;
 }
@@ -25,7 +28,12 @@ a{
     left: 0;
     top: 0;
 }
-
+@media only screen and (max-width:47.77em){
+    html{
+        width: 100%;
+        overflow-x: hidden
+    }
+}
 
 
 @font-face {

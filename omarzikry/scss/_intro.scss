@@ -16,3 +16,11 @@
     font-weight: 600;
     color: $light-grey;
 }
+@media only screen and (max-width:47.777em){
+    .intro p{
+        padding: 1em 0em;
+    }
+    .intro{
+        height: auto
+    }
+}

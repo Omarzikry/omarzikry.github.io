@@ -3,10 +3,10 @@
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding: 0 10em
+	padding: 0 10em;
 }
 .work .project{
-	height: 60em
+	height: 40em
 }
 /*.wrapper {
 	display: flex;
@@ -52,12 +52,13 @@
 .project .img{
 	height: 35em;
 	width: 25em;
-	transition: transform 4s ease
+	transition: transform 4s ease;
 }
 .img-wrapper{
 	height: 35em;
 	width: 25em;
-	overflow: hidden
+	overflow: hidden;
+	box-shadow: 0px 20px 100.28px 8.72px rgba(0, 0, 0, 0.35);
 }
 .project{
 	display: flex;
@@ -102,4 +103,25 @@
 .img-wrapper:hover .overlay{
 	opacity: 1;
 	transition: all 0.5s ease
+}
+
+
+@media only screen and (max-width:47.777em){
+	.work{
+		grid-template-columns: 1fr;
+		padding: 0;
+	}
+	.project{
+		padding: 0;
+	}
+	.project .img{
+		width: 100%;
+	}
+	.img-wrapper{
+		width: 100%;
+	}
+	.img2{
+		position: static;
+		padding-top: 2em
+	}
 }
