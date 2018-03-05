@@ -40,6 +40,18 @@ a{
     font-family: brandon ;
     src: url('../fonts/Brandon_bld.otf');
 }
+@font-face {
+    font-family: proxima-regular ;
+    src: url('../fonts/proxima-regular.woff');
+}
+@font-face {
+    font-family: proxima-thin ;
+    src: url('../fonts/proxima-thin.woff');
+}
+@font-face {
+    font-family: proxima-bold ;
+    src: url('../fonts/proxima-bold.woff');
+}
 .hidden{
     display: none
 }

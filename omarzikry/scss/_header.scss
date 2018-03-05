@@ -1,134 +1,56 @@
 header{
     height: 100vh;
-    width: 100vw;
-    background-color: #191919
 }
 nav{
+    height: 6em;
+    background-color: #111111;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999999999999;
+    top: -6em;
+    opacity: 0;
+    animation: slideDown 2s forwards;
+    animation-delay: 3s
+}
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
     position: relative;
-    transition: all 1s ease;
-    z-index: 99999;
+    padding: 2em 0;
+    align-items: flex-end;
+    height: 100%
+}
+nav a:hover{
+    color: $white/2
+}
+nav .logo{
+    padding: 0em;
+}
+nav ul{
+    display: flex
 }
 nav li{
-    position: relative;
-    display: block;
+    padding: 0em 1em;
 }
-ul.vertical{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 15em;
-}
-nav ul.vertical li{
-    display: block;
-    list-style: none;
-    width: 100%;
-    text-align: center;
-}
-nav ul.vertical li a{
-    font-family: 'roboto';
-    font-size: 3em;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.2em 0;
-}
-nav ul.horizontal{
-    display: flex;
-    align-items: flex-end;
-    height: 30%;
-    padding-bottom: 3em;
-}
-nav ul.horizontal li{
-    padding: 0 1em;
-}
-nav ul.horizontal li a{
-    font-family: 'roboto';
+nav a{
+    color: $white;
+    font-family: 'proxima-regular';
     font-size: 1em;
-    color: white;
-    text-decoration: none;
+    transition: all 0.4s ease;
+    font-size: 1.8em
 }
-.link {
-    display: inline-block;
+.social-nav{
+    position: absolute;
+    right: 0%;
+}
+.social-nav .social{
+    padding: 0em 0.2em;
+}
+.main-ul{
     position: relative;
-    text-decoration: none;
-    padding: 10px 0;
-    color: #fff;
-}
-.hover-2 { 
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 3px;
-        transform: scaleX(0);
-        background-color: white;
-
-        transition: transform 0.3s;
-    }
-
-    &:hover {
-        &:after {
-            transform: scaleX(1);    
-        }
-    }
-}
-.hover-1 { 
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 1px;
-        transform: scaleX(0);
-        background-color: white;
-
-        transition: transform 0.4s;
-    }
-
-    &:hover {
-        &:after {
-            transform: scaleX(1);    
-        }
-    }
-}
-.back{
-    background-image: url('../images/nav.jpeg');
-    transition: all 1s ease;
-}
-.back1{
-    background-image: url('../images/nav2.jpeg');
-    transition: all 1s ease;
-}
-.back2{
-    background-image: url('../images/nav9.jpeg');
-    transition: all 1s ease;
-}
-.back3{
-    background-image: url('../images/nav14.jpeg');
-    transition: all 1s ease;
-    background-size: 100% 100%;
-}
-.back4{
-    background-image: url('../images/nav10.jpeg');
-    transition: all 1s ease;
-}
-nav{
-    position: fixed;
-    bottom: 100%;
-    transition: all 0.3s ease;
+    left: 15%;
 }
 .showing{
     bottom: 0;
@@ -165,51 +87,36 @@ div.dash{
     background-color: white !important;
 }
 @media only screen and (max-width:47.777em){
-    nav ul.vertical li a{
-        font-size: 2em;
+
+}
+@media only screen and (min-width:48em){
+    .hidden-big{
+        display: none
     }
-    nav ul.vertical li{
-        padding: 0.5em 0;
-    }
-    nav ul.vertical{
-        padding-top: 11em;
-    }
-    nav ul.horizontal li{
-        padding: 0 0.5em;
-        font-size: 0.9em
-    }
-}
-nav.showing ul.vertical li{
-    opacity: 0;
-    animation: fadeDown 1s ease both;
-    animation-delay: 0.9s;
-}
-nav.showing ul.horizontal{
-    animation: fadeDown 1s ease both;
-    animation-delay: 0.4s
-}
-nav.showing ul.vertical li:nth-child(2) {
-	animation-delay: 0.8s;
-}
-nav.showing ul.vertical li:nth-child(3) {
-	animation-delay: 0.7s;
-}
-nav.showing ul.vertical li:nth-child(4) {
-	animation-delay: 0.6s;
-}
-nav.showing ul.vertical li:nth-child(5) {
-	animation-delay: 0.5s;
 }
 
-//Fade down animation
+@keyframes slideDown {
+    0%{}
+    100%{top: 0;opacity: 1}
+}
+@keyframes img-slider {
+    0%{}
+    100%{background-image: url('../images/omarzikry.png')}
+}
 
-@keyframes fadeDown {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -30%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
+a.logo{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url('../images/omarzikry3.png');
+    background-size: 200px 200px;
+    background-position: center;
+    transition: all 0.4s ease;
+    background-color: #111111;
+    border-radius: 25px;
+    position: relative;
+    top: 20%
+}
+a.logo:hover{
+    background-image: url('../images/omarzikry.png')
 }
