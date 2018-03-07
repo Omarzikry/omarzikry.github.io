@@ -1,0 +1,15 @@
+.newsfeed{
+    height: 110em;
+    background: #dfdfeb
+}
+
+@media only screen and (max-width:47.777em){
+    .newsfeed img{
+        width: 90%;
+    }
+    .newsfeed{
+        padding:5em 0;
+        width: 100%;
+        height: auto;
+    }
+ }

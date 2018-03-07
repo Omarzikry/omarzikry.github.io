@@ -1,0 +1,244 @@
+nav ul,li{
+    display: inline-block;
+    list-style: none;
+    line-height: 1.5em
+}
+nav{
+    display: block;
+    z-index: 99;
+}
+li.center{
+    text-align: center
+}
+li.right{
+    text-align: right;
+}
+.fixed{
+    position: fixed;
+}
+li.nav-item{
+    padding: 1.1em 1em
+}
+nav strong{
+    font-size: 2em;
+    padding: 0.5em
+}
+ul.display-non{
+padding-left: 15em;
+font-size: 1.3em
+}
+nav{
+    width: 100em;
+    -webkit-box-shadow: 0px 4px 22px -4px rgba(5,5,5,0.85);
+    -moz-box-shadow: 0px 4px 22px -4px rgba(5,5,5,0.85);
+    box-shadow: 0px 4px 22px -4px rgba(5,5,5,0.85); 
+    @media only screen and (max-width:47.777em){
+        height: 3em;
+        padding-top: 1em;
+        width: 100%
+    }
+    background-color: #fff;
+}
+.bars{
+    /*float: right;
+    padding-right: 3em;
+    padding-top: 0.5em;*/
+    position: absolute;
+    left:40em;
+    top: 0.7em;
+    font-size: 2em;
+    cursor: pointer;
+    @media only screen and (max-width:47.777em){
+        font-size: 1.5em;
+        padding-right: 1em;
+        padding-top: 0.25em;
+        position: static;
+        float: right
+    }
+}
+
+//animation
+a.hover{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+  a.hover:hover {
+    color: #000;
+  }
+  a.hover:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  a.hover:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  //animation end
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+    }
+    
+    .sidenav li{
+        padding: 8px 8px 8px 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.2s;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        font-size: 60px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: #000
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    //contact
+
+    a.contact{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin-right: 1em;
+
+    }
+
+
+
+    //button
+
+    a.button{
+        text-decoration: none;
+        color: black;
+        border: 2px solid #000;
+        padding: 0.3em;
+        font-size: 20px;
+        font-weight: 100;
+        display: block;
+        width: 7em;
+        margin: 0 auto;
+    }
+    a.button:hover{
+        width: 7.5em;
+        background-color: black;
+        color: #fff;
+        transition: all 0.4s ease
+    }
+
+
+    //for small nav
+.no-display{
+    @media only screen and (min-width:48em){
+        display: none
+    }
+}
+    .no-display a{
+        font-size: 20px;
+    }
+    .no-display li{
+        text-align: right
+    }
+
+    .display-non{
+        @media only screen and (max-width: 47.777em){
+            display: none
+        }
+    }
+
+
+    //social
+    .social{
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social a{
+        display: flex;
+        margin: 1em;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        align-items: center;
+        justify-content: center
+    }
+    .social a:hover{
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        transition: all 0.4s ease;
+        margin: 0.55em
+    }
+    .social a:hover{
+        font-size: 20px
+    }
+    header{
+        width: 100%;
+        height: 4.55em;
+        @media only screen and (max-width:47.777em){
+            height: 2.4em;
+        }
+        z-index: 999999;
+    }
+
+
+    a.active{
+        position: relative;
+        color: #000;
+        text-decoration: none;
+      }
+      a.active:hover {
+        color: #000;
+      }
+      a.active:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      a.active:hover:before,a.active:link:before{
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }

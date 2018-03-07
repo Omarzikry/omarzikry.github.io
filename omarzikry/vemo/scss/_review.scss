@@ -1,0 +1,83 @@
+
+.review-text{
+    grid-area: review
+}
+.pic{
+    grid-area: pic
+}
+
+section.review{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "review pic";
+    margin-top: 10em
+}
+.review-text{
+    background-color: $cool-black;
+    color: #E8E8E8;
+    font-family: 'Rammetto One',sans-serif;
+    height: 420px
+}
+.review-text h4{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 7em
+}
+.review-text h3{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.3em
+}
+.review-text p{
+    font-size: 1.3em;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em;
+    text-align: center
+}
+.review-text .link a{
+    text-decoration: none;
+    color: #E8E8E8;
+    border: 2px solid #E8E8E8;
+    padding: 0.3em
+}
+.review-text .link a:hover{
+    background-color: #E8E8E8;
+    color: $cool-grey;
+    transition: all 0.4s ease;
+}
+.link{
+    margin-top: 1em
+}
+@media only screen and (min-width:48em){
+    .pic{
+        margin-left: -90px;
+        margin-top: -75px
+    }
+    .review-text{
+        padding-right: 90px;
+        padding-left: 25px
+    }
+}
+
+
+@media only screen and (max-width:47.77em){
+    section.review{
+        grid-template-columns: 1fr;
+        grid-template-areas: "pic"
+                            "review"; 
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 4em
+    }
+    .review-text h3{
+        font-size: 1em;
+    }
+    .review-text p{
+        font-size: 1em
+    }
+    .pic img{
+        width: 100%
+    }
+}

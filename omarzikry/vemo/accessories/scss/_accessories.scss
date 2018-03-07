@@ -1,0 +1,242 @@
+.header h1{
+    padding-top: 2em;
+    color: $cool-grey;
+    font-size: 3em;
+    font-family: 'Rammetto One',sans-serif;
+    text-align: center;
+    @media only screen and (max-width:47.77em){
+        font-size: 2em
+    }
+}
+.header p{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0 4em;
+    @media only screen and (max-width:47.77em){
+        padding: 0 1em;
+    }
+}
+
+
+.products-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding-top: 3em
+}
+.products-grid a{
+    text-decoration: none;
+    color: black
+}
+.products-grid h4{
+margin-top: 0.5em;
+}
+.img{
+    position: relative
+}
+.overlay1{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 350px;
+height: 0px;
+transition: all 0.6s ease;
+}
+.overlay1 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+a.explore{
+    margin-top: 70px
+}
+.overlay1 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+.img:hover .overlay1{
+    height: 250px
+}
+.img:hover a{
+display: block
+}
+.product1 h4,.product2 h4,.product3 h4,.product4 h4{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'lato',sans-serif;
+}
+.product1 p,.product2 p,.product3 p,.product4 p{
+    font-size: 1em;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em
+}
+
+
+//overlay2
+.overlay2{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 350px;
+height: 0px;
+transition: all 0.6s ease;
+}
+
+.overlay2 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+.overlay2 a.explore{
+    margin-top: 210px
+}
+.overlay2 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+
+.img:hover .overlay2{
+    height: 600px
+}
+
+
+//overlay3
+.overlay3{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 0px;
+    transition: all 0.6s ease;
+    }
+    .overlay3 a{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 0.3em;
+        text-align: center;
+        margin: 1em;
+        display: none
+    }
+    .overlay3 a.explore{
+        margin-top: 210px
+    }
+    .overlay3 a:hover{
+        background-color: #fff;
+        color: $cool-grey;
+        transition: all 0.35s ease;
+    }
+    .img:hover .overlay3{
+        height: 550px
+    }
+    //overlay4
+
+    .overlay4{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 350px;
+        height: 0px;
+        transition: all 0.6s ease;
+        }
+        
+        .overlay4 a{
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #fff;
+            padding: 0.3em;
+            text-align: center;
+            margin: 1em;
+            display: none
+        }
+        .overlay4 a.explore{
+            margin-top: 70px
+        }
+        .overlay4 a:hover{
+            background-color: #fff;
+            color: $cool-grey;
+            transition: all 0.35s ease;
+        }
+        
+        .img:hover .overlay4{
+            height: 250px
+        }
+        
+
+        //overlay5
+
+        .overlay5{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 350px;
+            height: 0px;
+            transition: all 0.6s ease;
+            }
+            
+            .overlay5 a{
+                font-size: 1.5em;
+                color: white;
+                text-decoration: none;
+                border: 2px solid #fff;
+                padding: 0.3em;
+                text-align: center;
+                margin: 1em;
+                display: none
+            }
+            .overlay5 a.explore{
+                margin-top: 70px
+            }
+            .overlay5 a:hover{
+                background-color: #fff;
+                color: $cool-grey;
+                transition: all 0.35s ease;
+            }
+            
+            .img:hover .overlay5{
+                height: 250px
+            }
+
+
+
+//small screens
+    p.small-only{
+        display: none
+    }
+    @media only screen and (max-width:47.766em){
+        .products-grid{
+            grid-template-columns: 1fr;
+            width: 80%;
+            margin: 0 auto
+        }
+        .img img{
+            width: 100%
+        }
+        p.small-only{
+            display: block;
+            font-family: 'lato',sans-serif;
+            font-size: 1.3em
+        }
+    }

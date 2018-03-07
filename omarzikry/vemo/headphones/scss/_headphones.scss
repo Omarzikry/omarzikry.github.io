@@ -1,0 +1,139 @@
+.header h1{
+    padding-top: 2em;
+    color: $cool-grey;
+    font-size: 3em;
+    font-family: 'Rammetto One',sans-serif;
+    text-align: center;
+    @media only screen and (max-width:47.77em){
+        font-size: 2em
+    }
+}
+.header p{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0 4em;
+    @media only screen and (max-width:47.77em){
+        padding: 0 1em;
+    }
+}
+
+.products-grid h4{
+    margin-top: 1em;
+    }
+
+.products-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding-top: 3em
+}
+.products-grid a{
+    text-decoration: none;
+    color: black
+}
+.img{
+    position: relative
+}
+.overlay1{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 400px;
+height: 0px;
+transition: all 0.6s ease;
+}
+.overlay1 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+a.explore{
+    margin-top: 100px
+}
+.overlay1 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+.img:hover .overlay1{
+    height: 300px
+}
+.img:hover a{
+display: block
+}
+.product1 h4,.product2 h4,.product3 h4,.product4 h4{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'lato',sans-serif;
+}
+.product1 p,.product2 p,.product3 p,.product4 p{
+    font-size: 1em;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em
+}
+
+
+//overlay2
+.overlay2{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 400px;
+height: 0px;
+transition: all 0.6s ease;
+}
+
+.overlay2 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+.overlay2 a.explore{
+    margin-top: 190px
+}
+.overlay2 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+
+.img:hover .overlay2{
+    height: 500px
+}
+
+
+
+//small screens
+p.small-only{
+    display: none
+}
+@media only screen and (max-width:47.766em){
+    .products-grid{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto
+    }
+    .img img{
+        width: 100%
+    }
+    p.small-only{
+        display: block;
+        font-family: 'lato',sans-serif;
+        font-size: 1.3em
+    }
+}

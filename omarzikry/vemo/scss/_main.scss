@@ -1,0 +1,9 @@
+main{
+    width:80em;
+    margin: 0 auto;
+    z-index: 1;
+    @media only screen and (max-width:47.777em){
+        width: 100%;
+        margin: 0;
+    }
+}

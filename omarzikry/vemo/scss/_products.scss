@@ -1,0 +1,181 @@
+.products-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding-top: 3em
+}
+.products-grid a{
+    text-decoration: none;
+    color: black
+}
+.img{
+    position: relative
+}
+.overlay1{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 300px;
+height: 0px;
+transition: all 0.35s ease;
+}
+.overlay1 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+a.explore{
+    margin-top: 190px
+}
+.overlay1 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+.img:hover .overlay1{
+    height: 500px
+}
+.img:hover a{
+display: block
+}
+.product1 h4,.product2 h4,.product3 h4,.product4 h4{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'lato',sans-serif;
+}
+.product1 p,.product2 p,.product3 p,.product4 p{
+    font-size: 1em;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em
+}
+
+
+//overlay2
+.overlay2{
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: rgba(0, 0, 0, 0.5);
+width: 300px;
+height: 0px;
+transition: all 0.35s ease;
+}
+
+.overlay2 a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 0.3em;
+    text-align: center;
+    margin: 1em;
+    display: none
+}
+.overlay2 a.explore{
+    margin-top: 120px
+}
+.overlay2 a:hover{
+    background-color: #fff;
+    color: $cool-grey;
+    transition: all 0.35s ease;
+}
+
+.img:hover .overlay2{
+    height: 350px
+}
+
+
+//overlay3
+.overlay3{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 0px;
+    transition: all 0.35s ease;
+    }
+    .overlay3 a{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 0.3em;
+        text-align: center;
+        margin: 1em;
+        display: none
+    }
+    .overlay3 a.explore{
+        margin-top: 70px
+    }
+    .overlay3 a:hover{
+        background-color: #fff;
+        color: $cool-grey;
+        transition: all 0.35s ease;
+    }
+    .img:hover .overlay3{
+        height: 250px
+    }
+
+//overlay4
+.overlay4{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 0px;
+    transition: all 0.35s ease;
+    }
+    .overlay4 a{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 0.3em;
+        text-align: center;
+        margin: 1em;
+        display: none
+    }
+    .overlay4 a.explore{
+        margin-top: 180px
+    }
+    .overlay4 a:hover{
+        background-color: #fff;
+        color: $cool-grey;
+        transition: all 0.35s ease;
+    }
+
+    .img:hover .overlay4{
+        height: 450px
+    }
+
+
+
+    p.small-only{
+        display: none
+    }
+    @media only screen and (max-width:47.766em){
+        .products-grid{
+            grid-template-columns: 1fr;
+            width: 80%;
+            margin: 0 auto
+        }
+        .img img{
+            width: 100%
+        }
+        p.small-only{
+            display: block;
+            font-family: 'lato',sans-serif;
+            font-size: 1.3em
+        }
+    }

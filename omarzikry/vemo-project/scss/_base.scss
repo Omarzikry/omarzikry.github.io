@@ -1,0 +1,62 @@
+$grey: (#83898F/1.5);
+$white: #FEFEFE;
+$light-grey: (rgb(88, 88, 88)*1.5);
+$rose: #d24d57;
+html,body{
+    color: black;
+    font-family: 'lato','roboto',sans-serif;
+    background-color: #FEFEFE;
+}
+*{
+    box-sizing: border-box;
+}
+*:focus{
+    outline: 0;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none
+}
+.fixed{
+    position: relative;
+    width: 100%
+}
+.relative{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+@media only screen and (max-width:47.77em){
+    html{
+        width: 100%;
+        overflow-x: hidden
+    }
+}
+
+
+@font-face {
+    font-family: brandon ;
+    src: url('../fonts/Brandon_bld.otf');
+}
+@font-face {
+    font-family: proxima-regular ;
+    src: url('../fonts/proxima-regular.woff');
+}
+@font-face {
+    font-family: proxima-thin ;
+    src: url('../fonts/proxima-thin.woff');
+}
+@font-face {
+    font-family: proxima-bold ;
+    src: url('../fonts/proxima-bold.woff');
+}
+.hidden{
+    display: none
+}
+main{
+    height: auto;
+    background-color: white;
+    width: 100vw
+}

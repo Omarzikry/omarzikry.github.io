@@ -1,0 +1,83 @@
+.new-products{
+    margin-top: 10em
+}
+.new-products h1{
+    font-family: 'Clicker Script',sans-serif;
+    font-size: 3em;
+    text-align: center
+}
+.new-products .grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin-top: 3em
+}
+.new-products h4{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'lato',sans-serif;
+    margin-top: 1em
+}
+.new-products a{
+    text-decoration: none;
+    color: black
+}
+.new-products .overlay1 a{
+    color: $white
+}
+.new-products p{
+    font-size: 1em;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em
+}
+
+.overlay5{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 0px;
+    transition: all 0.35s ease;
+    }
+.overlay5 a{
+        font-size: 1.5em;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 0.3em;
+        text-align: center;
+        margin: 1em;
+        display: none
+    }
+    .overlay5 a.explore{
+        margin-top: 80px
+    }
+    .overlay5 a:hover,.overlay1 a:hover{
+        background-color: #fff;
+        color: $cool-grey;
+        transition: all 0.35s ease;
+    }
+    .img:hover .overlay5{
+        height: 250px
+    }
+
+    @media only screen and (max-width:47.766em){
+        .new-products .grid{
+            grid-template-columns: 1fr;
+            width: 80%;
+            margin: 0 auto
+        }
+        .img img{
+            width: 100%
+        }
+        .new-products h1{
+            margin-bottom: 1em
+        }
+        .new-products{
+            margin-top: 6em
+        }
+    }

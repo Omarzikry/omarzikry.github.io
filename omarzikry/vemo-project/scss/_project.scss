@@ -1,0 +1,21 @@
+.project{
+    height: 230em;
+    background: linear-gradient(to bottom, #e0f2fc 0%,#efefef 100%);
+    width: 100%;
+    padding: 10em 0;
+}
+.project img{
+    width: 60%;
+    display: block;
+    margin: 0 auto
+}
+@media only screen and (max-width:47.777em){
+   .project img{
+       width: 90%;
+   }
+   .project{
+       padding:5em 0;
+       width: 100%;
+       height: auto;
+   }
+}

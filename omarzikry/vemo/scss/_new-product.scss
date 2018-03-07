@@ -1,0 +1,70 @@
+.new-product{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10em
+}
+.new-text{
+    height: 430px;
+    background-color: $cool-black;
+    color: $white;
+    font-family: 'Rammetto One',sans-serif;
+}
+.new-text h4{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 6em
+}
+.new-text h3{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.3em
+}
+.new-text p{
+    font-size: 1.3em;
+    font-family: 'lato',sans-serif;
+    line-height: 1.5em;
+    text-align: center
+}
+.new-text .link a{
+    text-decoration: none;
+    color: #E8E8E8;
+    border: 2px solid #E8E8E8;
+    padding: 0.3em
+}
+.new-text .link a:hover{
+    background-color: #E8E8E8;
+    color: $cool-grey;
+    transition: all 0.4s ease;
+}
+
+@media only screen and (min-width:48em){
+    .pic2{
+        z-index:2 ;
+    }
+    .new-text{
+        padding-left: 90px;
+        padding-right: 25px;
+        margin-left: -90px;
+        margin-top: -20px;
+        z-index: 1;
+    }
+}
+@media only screen and (max-width:47.77em){
+    .new-product{
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+    .new-text h3{
+        font-size: 1em;
+    }
+    .new-text p{
+        font-size: 1em
+    }
+    .pic2 img{
+        width: 100%
+    }
+}
