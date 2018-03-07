@@ -1,0 +1,34 @@
+.gallary{
+    width: 100%;
+    height: 110vh;
+    filter: grayscale(80%);
+    transition: all 1s ease;
+    position: relative;
+    font-family: mylato,sans-serif
+}
+.flex-end{
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+.gallary .flex1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallary-wrapper{
+    background-color: rgba(0, 0, 0, 0.575);
+    height: 100%
+}
+.gallary .flex1 h2{
+    font-size: 7em;
+    color: #fff;
+    transition: all 0.5s ease
+}
+@media only screen and (max-width:47.77em){
+   .gallary{
+    background-image: url('../images/gallary-small.jpeg')
+   }
+}

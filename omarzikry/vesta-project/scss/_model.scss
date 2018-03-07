@@ -1,0 +1,14 @@
+.model{
+    height: 50em;
+    width: 70%;
+    margin: 0 auto;
+}
+.model img{
+    width: 100%
+}
+@media only screen and (max-width:47.777em){
+    .model{
+        height: auto;
+        width: 90%;
+    }
+}

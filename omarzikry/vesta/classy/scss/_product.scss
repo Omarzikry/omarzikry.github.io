@@ -1,0 +1,105 @@
+header{
+    height: 0
+}
+.grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item{
+    height: 21em;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.hero{
+    height: 20em;
+    background-image: url('../images/classy.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.hero h2{
+    font-size: 8em;
+}
+.hero h3{
+    font-size: 3em;
+}
+.item1{
+    background-image: url('../images/blazer1.jpg');
+}
+.item2{
+    background-image: url('../images/d1.jpg');
+}
+
+.item3{
+    background-image: url('../images/p4.jpg');
+}
+.item4{
+    background-image: url('../images/a2.jpg');
+}
+.item5{
+    background-image: url('../images/r1.jpg');
+    padding-bottom: 1em;
+}
+.item6{
+    background-image: url('../images/b1.jpg');
+    padding-bottom: 1em;
+}
+.item7{
+    background-image: url('../images/e1.jpg');
+    padding-bottom: 1em;
+}
+.overlay{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: white;
+    font-size: 2em;
+    opacity: 0;
+    transition: all 0.4s ease;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.item:hover .overlay{
+    opacity: 1;
+}
+.item2 .overlay,.item4 .overlay,.item6 .overlay,.item8 .overlay{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.719)
+}
+
+.item p{
+    color: black;
+    font-size: 1.2em;
+    opacity: 1;
+    transition: all 0.1s ease;
+}
+.item:hover p{
+    opacity: 0
+}
+
+@media only screen and (max-width:47.77em){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .hero h2{
+        font-size: 5em;
+    }
+    .hero h3{
+        font-size: 1.5em
+    }
+}

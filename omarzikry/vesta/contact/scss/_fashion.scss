@@ -1,0 +1,29 @@
+.fashion{
+    height: 110vh;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5em;
+    box-sizing: border-box;
+}
+.fashion p{
+    font-size: 2.5em;
+    line-height: 2em;
+}
+.fashion h2{
+    font-size: 4em;
+    font-family: 'Elsie',sans-serif;
+    padding-top: 1.5em
+}
+@media only screen and (max-width:47.77em){
+    .fashion{
+        padding: 1em;
+        height: 40em;
+    }
+    .fashion p{
+        font-size: 1.5em;
+    }
+    .fashion h2{
+        font-size: 2.5em
+    }
+}

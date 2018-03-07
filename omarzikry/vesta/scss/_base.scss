@@ -1,0 +1,13 @@
+@font-face {
+    font-family: mylato;
+    src: url('../fonts/SteelfishRg-Regular/steelfish_rg.woff');
+ }
+ @import url('https://fonts.googleapis.com/css?family=Elsie');
+
+ body{
+     background-color: black;
+     font-family: mylato,sans-serif;
+ }
+ a{
+     text-decoration: none
+ }

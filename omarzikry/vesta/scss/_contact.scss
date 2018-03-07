@@ -1,0 +1,15 @@
+.contact{
+    height: 53vh;
+    background-image: url('../images/contact.jpg');
+    background-size: cover
+}
+.contact .flex h2{
+    font-size: 12em;
+    white-space: 5px;
+    color: white;
+}
+@media only screen and (max-width:47.77em){
+    .contact .flex h2{
+        font-size: 8em;
+    }
+}

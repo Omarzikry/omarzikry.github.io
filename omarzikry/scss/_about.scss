@@ -1,0 +1,36 @@
+.about{
+    height: 50em;
+    background-image: url('../images/about3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.about .overlay1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.712)
+}
+.about .overlay1 h3{
+    font-family: 'Montserrat';
+    color: $black;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.about .overlay1 h2{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 1em 10em;
+    font-weight: 600;
+    color: $light-grey;
+}
+
+
+@media only screen and (max-width:50em){
+    .about .overlay1 h2{
+        padding: 1em;
+    }
+}

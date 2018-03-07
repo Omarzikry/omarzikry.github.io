@@ -1,0 +1,89 @@
+.gallary-grid{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto
+}
+.item{
+    height: 55vh;
+    position: relative;
+    filter: grayscale(60%);
+    filter: brightness(50%);
+    transition: all 0.4s ease;
+}
+.item1{
+    background-image: url('../images/gallary1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallary-grid .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s ease
+}
+.item:hover{
+    filter: grayscale(0%);
+    filter: brightness(100%)
+}
+.gallary-grid .overlay h3{
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    
+}
+.gallary-grid .item:hover .overlay{
+    opacity: 1;
+}
+
+
+.item2{
+    background-image: url('../images/gallary5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.item3{
+    background-image: url('../images/gallary15.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item4{
+    background-image: url('../images/gallary24.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item5{
+    background-image: url('../images/gallary20.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.item6{
+    background-image: url('../images/gallary32.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+@media only screen and (max-width:47.77em){
+    .gallary-grid{
+        grid-template-columns: 1fr;
+    }
+    .gallary-grid .overlay{
+        opacity: 1
+    }
+    .item{
+        height: 55vh;
+        position: relative;
+        filter: grayscale(10%);
+        filter: brightness(100%);
+        transition: all 0.4s ease;
+    }
+}

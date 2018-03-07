@@ -1,0 +1,218 @@
+nav{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+nav ul {
+    display: flex;
+    overflow: hidden;
+    text-align: center
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 1em
+}
+ul.right-nav{
+    justify-content: flex-end;
+}
+nav h1{
+    text-align: center;
+    font-size: 2.5em
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-family: mylato,sans-serif;
+    
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.2s ease;
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-family: mylato,sans-serif;
+    height: 100vh;
+    transition: all 0.5s ease;
+}
+#logo1{
+    display: none
+}
+
+
+
+
+
+//navbar fixed shrink
+
+#nav {
+    height: 70px;
+    background: transparent; // Transparent initial setting
+    //display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+    padding: 1em 0em
+  }
+  
+  #logo,#logo1 {
+    color: white;
+    font-size: 3em;
+    transition: all ease .5s;
+    font-family: 'Elsie',sans-serif;
+  }
+   #nav.shrink {
+    height: 20px;
+    transition: all ease .5s;
+    background: rgba(0, 0, 0, 0.671);
+  }
+  /*#nav.shrink li{
+    padding-top: 0.7em
+  }*/
+  #nav.shrink a{
+      font-size: 1.5em;
+  }
+  /*#nav.shrink .clearfix{
+      display: none
+  }*/
+  
+  #nav.shrink #logo,#nav.shrink #logo1  {
+    transition: all ease .5s;
+    font-size: 1.3em
+  }
+
+  /*#nav.shrink ul{
+      background-color: rgba(0, 0, 0, 0.671);
+  }
+  #nav.shrink .handle{
+      background-color: rgba(0, 0, 0, 0.637);
+  }*/
+
+
+  @media only screen and (max-width:47.77em){
+    .more-container .more-span{
+        display: none
+    }
+      nav{
+          display: block
+      }
+      nav ul{
+          display: block;
+          background-color: black
+      }
+      nav ul li{
+          display: block;
+          text-align: center;
+          padding: 1em 0;
+      }
+      nav ul li a{
+          font-size: 3em;
+      }
+      #logo{
+          display: none
+      }
+      #logo1{
+          display: block;
+          text-align: left;
+          padding-left: 1em;
+      }
+      nav ul{
+        max-height: 0;
+      }
+      h1 span{
+          float: right;
+          padding-right: 1em
+      }
+      .showing{
+        max-height: 20em
+      }
+      #nav.shrink a{
+        font-size: 2em;
+    }
+    header{
+        background-image: url('../images/model6.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .left-nav{
+    -webkit-transition: max-height 0.4s ease;
+    -ms-transition: max-height 0.4s ease;
+    -moz-transition: max-height 0.4s ease;
+    transition: max-height 0.4s ease;
+    }
+    .right-nav{
+        -webkit-transition: max-height 0.4s ease-in;
+        -ms-transition: max-height 0.4s ease-in ;
+        -moz-transition: max-height 0.4s ease-in;
+        transition: max-height 0.4s ease-in;
+        margin-top: -3px
+    }
+  }
+  .clearfix{
+      clear: both
+  }
+
+  @media only screen and (min-width:48em){
+    .clearfix{
+        display: none
+    }
+}
+
+
+
+.more{
+    fill: white;
+    height: 100px;
+    width: 100px;
+}
+.more-container .more-span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-bottom: 40px;
+    position: relative
+}
+.more-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.more:hover{
+    fill: gray
+}
+.more:visited,.more:link{
+    fill: white
+}
+
+/*.more-container .more-span{
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 0.5s ease;
+}
+@keyframes bounce{
+    0% {}
+    100% {transform: translateY(-30px)}
+}
+
+@-webkit-keyframes bounce{
+    0% {}
+    100% {transform: translateY(-30px)}
+}*/
+
+#main:focus{
+    outline: 0;
+}
+

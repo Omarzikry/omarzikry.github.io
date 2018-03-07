@@ -1,0 +1,124 @@
+.footer{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+    color: #fff;
+    padding: 1em
+}
+.footer .left-footer{
+    text-align: left;
+    padding: 2em;
+}
+.footer .left-footer h3{
+    color: white;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    padding-bottom: 1.1em;
+}
+.footer .left-footer a{
+    color: (white/2);
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+.footer .left-footer p{
+    padding: 1em 0;
+}
+.footer .left-footer a:hover{
+    color: #fff;
+}
+
+
+//center-footer
+.center-footer h3{
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    padding: 1em 0;
+    padding-bottom: 1em
+}
+
+form{
+    height: 55%;
+}
+.footer .flex-end{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer input[type="email"]{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(29, 27, 27);
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+}
+input:focus{
+    outline: 0
+}
+input[type="email"]::-webkit-input-placeholder {
+    color: white;
+  }
+  input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+  }
+  input[type="email"]:-moz-placeholder { /* Firefox 18- */
+    color: white;
+  }
+  p.copy{
+      color: #fff;
+      text-align: center;
+      letter-spacing: 2px;
+      padding: 1em;
+  }
+
+  //right-footer
+
+  .right-footer{
+      text-align: right;
+      padding: 2em
+  }
+  .right-footer h3{
+      font-size: 2em;
+      padding-bottom: 1.2em;
+      letter-spacing: 3px
+  }
+  .right-footer a{
+      color: (#fff/2);
+      transition: all 0.3s ease;
+      font-size: 1.5em;
+  }
+  .right-footer a:hover{
+      color: #fff;
+  }
+  .right-footer p{
+      padding: 0.5em 0;
+      letter-spacing: 2px;
+  }
+
+  @media only screen and (max-width:47.77em){
+      .footer{
+          grid-template-columns: 1fr;
+          height: 170vh
+      }
+      .left-footer a,.left-footer h3{
+          text-align: center
+      }
+      .right-footer{
+          text-align: center
+      }
+      .footer input[type="email"]{
+        font-size: 0.8em;
+        width: 90%
+    }
+  }

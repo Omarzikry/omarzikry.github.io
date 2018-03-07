@@ -1,0 +1,91 @@
+.contact-header{
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.store{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s ease;
+    position: relative;
+}
+.store1{
+    background-image: url('../images/store1.jpeg');
+    filter: brightness(50%);
+}
+.store2{
+    background-image: url('../images/store2.jpeg');
+    filter: brightness(50%);
+}
+.contact-header .overlay{
+    background-color: rgba(0, 0, 0, 0.767);
+    height: 89.5%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 5em;
+    opacity: 0;
+    transition: all 0.4s ease
+}
+.contact-header .overlay h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 1.5em;
+    letter-spacing: 1px;
+}
+.contact-header .overlay p{
+    padding: 1em 0;
+    font-weight: 100;
+    word-spacing: 0.3em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    filter: brightness(70%)
+}
+.contact-header .overlay h3{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-top: 1.7em;
+}
+.store1:hover{
+    filter: brightness(100%)
+}
+.store2:hover{
+    filter: brightness(100%)
+}
+.store:hover .overlay{
+    opacity: 1;
+}
+.store h2.title{
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    font-size: 4em;
+    font-weight: 600;
+}
+.store1 h2.title{
+    position: absolute;
+    top: 43%;
+    left: 33%;
+}
+.store:hover h2.title{
+    display: none
+}
+@media only screen and (max-width:47.77em){
+    .contact-header{
+        grid-template-columns: 1fr;
+    }
+    .contact-header h2.title{
+        display: none
+    }
+    .contact-header .overlay{
+        opacity: 1;
+    }
+    .contact-header .store{
+        filter: brightness(90%)
+    }
+    header{
+        height: 180vh;
+    }
+}

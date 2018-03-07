@@ -16,7 +16,8 @@
     padding-top: 5em;
 }
 .work3 .project img{
-    width: 50%;
+    width: 100%;
+    margin-right: 2em
 }
 .work3 .project h4{
     font-size: 2em;
@@ -46,7 +47,8 @@
     background-color: $rose
 }
 .btns{
-    display: flex
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width:47.777em){
