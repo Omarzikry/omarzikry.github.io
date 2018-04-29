@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif, 'Droid Sans', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   background: #EDEDF1;
 }
 
@@ -386,73 +386,4 @@ table .odd {
   .content p {
     font-size: 16px;
   }
-}
-
-
-/*navigation*/
-
-.logo{
-  height: 30px;
-  width: 200px;
-  position: relative;
-  top: -10px
-}
-.navbar-brand{
-  padding: 0;
-  margin: 0;
-}
-
-.navbar{
-  background-color: rgb(100, 100, 100)
-}
-
-.p{
-  font-family: sans-serif
-}
-.p span{
-  padding: 0 1em
-}
-
-.eye{
-  color: black;
-  font-size: 2em
-}
-
-/*new section*/
-
-.new-container{
-  border: 1px solid rgb(177, 177, 177);
-  position: relative;
-  display: flex;
-  align-items: flex-end
-}
-.new-container div{
-  padding: 0 1em
-}
-.new{
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5em;
-  color: gray
-}
-
-.new-container .num{
-  font-size: 3em;
-  color: greenyellow;
-  padding-right: 0
-}
-
-.new-container .car{
-  padding-left: 0
-}
-.car p{
-  padding-bottom: 20%
-}
-
-.bse{
-  position: absolute;
-  right: 0;
-}
-
-.bsep{
-  font-weight: 550
 }
