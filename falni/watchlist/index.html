@@ -94,55 +94,268 @@
                               </div>
                           </div>
                       </div>
-                      <section>
-                          <form method="get" action="/screen/raw/">
-                              <h3>Query Builder</h3>
-                              <p>You can customize the query below:</p>
-                              <div>
-                                  <div class="row">
-                                      <div class="col-md-8">
-                                          <div class="dropdown">
-                                              <textarea autocomplete="off" spellcheck="false" required="" placeholder="eg. Book value > Current price" class="form-control" rows="7" name="query"></textarea>
-                                              <ul class="dropdown-menu"></ul>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="callout callout-info">
-                                              <p class="lead">Custom Query Example</p>
-                                              <p>
-                                                  <!-- react-text: 87 -->Price to earning &lt; 15 AND
-                                                  <!-- /react-text -->
-                                                  <br>
-                                                  <!-- react-text: 89 -->Return on capital employed &gt; 22%
-                                                  <!-- /react-text -->
-                                              </p><small><a href="http://blog.screener.in/2012/07/creating-stock-screens/">Detailed guide on creating stock screens</a></small></div>
-                                      </div>
-                                  </div>
-                                  <div>
-                                      <div class="pull-right">
-                                          <br>
-                                          <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i>
-                                              <!-- react-text: 97 -->
-                                              <!-- /react-text -->
-                                              <!-- react-text: 98 -->Show all ratios
-                                              <!-- /react-text -->
-                                          </button>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="checkbox">
-                                  <label>
-                                      <input type="checkbox" name="latest" value="true">
-                                      <!-- react-text: 102 -->Show only latest results?
+                      <section id="peers">
+                          <div>
+                            <div class="pull-right">
+                              <span>
+                                <span>
+                                  <button type="button" class="btn btn-default">
+                                    <i class="glyphicon glyphicon-pencil"></i>
+                                    <!-- react-text: 233 -->
+                                    <!-- /react-text -->
+                                    <!-- react-text: 234 -->Customize columns
+                                    <!-- /react-text -->
+                                  </button>
+                                </span>
+                              </span>
+                            </div>
+                            <h2>
+                              <!-- react-text: 236 -->Peer Comparison
+                              <!-- /react-text -->
+                              <small> Top 7 companies in the same business</small>
+                            </h2>
+                            <div class="table-responsive">
+                              <table class="table table-striped table-hover">
+                                <thead>
+                                  <tr>
+                                    <th class="text">S.No.</th>
+                                    <th class="text">Name</th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1067 -->CMP
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1069 -->Rs.
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1072 -->P/E
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1074 -->
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1077 -->Mar Cap
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1079 -->Rs.Cr.
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1082 -->Div Yld
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1084 -->%
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1087 -->NP Qtr
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1089 -->Rs.Cr.
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1092 -->Qtr Profit Var
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1094 -->%
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1097 -->Sales Qtr
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1099 -->Rs.Cr.
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1102 -->Qtr Sales Var
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1104 -->%
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                    <th>
+                                      <span>
+                                        <!-- react-text: 1107 -->CMP / BV
+                                        <!-- /react-text -->
+                                        <br>
+                                        <!-- react-text: 1109 -->
+                                        <!-- /react-text -->
+                                      </span>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="">
+                                    <td class="text">
+                                      <!-- react-text: 1112 -->1
                                       <!-- /react-text -->
-                                  </label>
-                              </div>
-                              <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-send"></i>
-                                  <!-- react-text: 105 -->Run this query
-                                  <!-- /react-text -->
-                              </button>
-                          </form>
-                      </section>
+                                      <!-- react-text: 1113 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/ONGC/">O N G C</a>
+                                    </td>
+                                    <td>180.70</td>
+                                    <td>12.53</td>
+                                    <td>2,30,165.04</td>
+                                    <td>4.21</td>
+                                    <td>5,014.67</td>
+                                    <td>15.22</td>
+                                    <td>22,995.88</td>
+                                    <td>14.90</td>
+                                    <td>1.15</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td class="text">
+                                      <!-- react-text: 1127 -->2
+                                      <!-- /react-text -->
+                                      <!-- react-text: 1128 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/OIL/">Oil India</a>
+                                    </td>
+                                    <td>231.30</td>
+                                    <td>8.78</td>
+                                    <td>26,094.04</td>
+                                    <td>4.38</td>
+                                    <td>705.22</td>
+                                    <td>55.10</td>
+                                    <td>2,852.55</td>
+                                    <td>16.62</td>
+                                    <td>0.84</td>
+                                  </tr>
+                                  <tr class="self">
+                                    <td class="text">
+                                      <!-- react-text: 1142 -->3
+                                      <!-- /react-text -->
+                                      <!-- react-text: 1143 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/JINDRILL/consolidated">Jindal Drilling</a>
+                                    </td>
+                                    <td>165.80</td>
+                                    <td>6.54</td>
+                                    <td>478.30</td>
+                                    <td>0.30</td>
+                                    <td>NaN</td>
+                                    <td>NaN</td>
+                                    <td>NaN</td>
+                                    <td>NaN</td>
+                                    <td>0.28</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td class="text">
+                                      <!-- react-text: 1157 -->4
+                                      <!-- /react-text -->
+                                      <!-- react-text: 1158 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/HINDOILEXP/">Hind.Oil Explor.</a>
+                                    </td>
+                                    <td>124.65</td>
+                                    <td>80.93</td>
+                                    <td>1,642.91</td>
+                                    <td>0.00</td>
+                                    <td>12.87</td>
+                                    <td>100.48</td>
+                                    <td>13.36</td>
+                                    <td>143.35</td>
+                                    <td>4.66</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td class="text">
+                                      <!-- react-text: 1172 -->5
+                                      <!-- /react-text -->
+                                      <!-- react-text: 1173 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/SELAN/">Selan Expl. Tech</a>
+                                    </td>
+                                    <td>236.95</td>
+                                    <td>25.70</td>
+                                    <td>395.47</td>
+                                    <td>2.07</td>
+                                    <td>6.59</td>
+                                    <td>166.80</td>
+                                    <td>21.22</td>
+                                    <td>50.18</td>
+                                    <td>1.33</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td class="text">
+                                      <!-- react-text: 1187 -->6
+                                      <!-- /react-text -->
+                                      <!-- react-text: 1188 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/513536/consolidated">Guj.Nat.Resour.</a>
+                                    </td>
+                                    <td>24.25</td>
+                                    <td>56.00</td>
+                                    <td>93.97</td>
+                                    <td>0.41</td>
+                                    <td>0.08</td>
+                                    <td>104.47</td>
+                                    <td>2.17</td>
+                                    <td>3.83</td>
+                                    <td>1.12</td>
+                                  </tr>
+                                  <tr class="">
+                                    <td class="text">
+                                      <!-- react-text: 1202 -->7
+                                      <!-- /react-text -->
+                                      <!-- react-text: 1203 -->.
+                                      <!-- /react-text -->
+                                    </td>
+                                    <td class="text">
+                                      <a href="/company/531612/">KGN Industries</a>
+                                    </td>
+                                    <td>1.85</td>
+                                    <td>1,027.78</td>
+                                    <td>41.16</td>
+                                    <td>0.00</td>
+                                    <td>0.01</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>NaN</td>
+                                    <td>0.66</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-default">
+                            <i class="glyphicon glyphicon-plus"></i>
+                            <!-- react-text: 247 -->
+                            <!-- /react-text -->
+                            <!-- react-text: 248 -->Add Detailed Comparison
+                            <!-- /react-text -->
+                          </button>
+                        </section>
                   </div>
                   <footer class="footer">
                       <hr><span class="pull-right right-al no-print red"><!-- react-text: 109 -->Made with <!-- /react-text --><i class="glyphicon glyphicon-heart"></i><!-- react-text: 111 --> in <!-- /react-text --><b>India</b><!-- react-text: 113 -->.<!-- /react-text --></span>
