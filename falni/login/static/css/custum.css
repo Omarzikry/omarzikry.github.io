@@ -2,7 +2,10 @@ body {
   font-family: sans-serif, 'Droid Sans', sans-serif;
   background: #EDEDF1;
 }
-
+footer{
+position: absolute;
+bottom: 0
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Droid Sans', sans-serif;
 }
@@ -455,15 +458,4 @@ table .odd {
 
 .bsep{
   font-weight: 550
-}
-
-@media screen and (max-width:1200px){
-  .container{
-    width: 100% !important;
-  }
-}
-@media screen and (max-width:880px){
-  .bse{
-    display: none
-  }
 }

@@ -387,3 +387,18 @@ table .odd {
     font-size: 16px;
   }
 }
+
+
+.logo{
+  height: 30px;
+  width: 200px;
+  position: relative;
+  top: -10px
+}
+.navbar-brand{
+  padding: 0;
+  margin: 0;
+}
+.navbar{
+  background-color: rgb(100, 100, 100)
+}
