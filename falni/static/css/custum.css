@@ -457,9 +457,25 @@ table .odd {
   font-weight: 550
 }
 
+.flexit{
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
 @media screen and (max-width:1200px){
   .container{
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width:1300px){
+  .mpu{
+    width: 100%;
+  }
+  .new-container{
+    padding: 0;
+    width: 100%
   }
 }
 @media screen and (max-width:880px){
@@ -472,5 +488,11 @@ table .odd {
   .new-container{
     flex-direction: column;
     align-items: center
+  }
+}
+
+@media screen and (max-width:900px) {
+  .flexit{
+    flex-direction: column
   }
 }
