@@ -1,0 +1,189 @@
+.hero {
+    background-color: #373737;
+    position: relative;
+    width: 100vw; // we know it will be full-width
+    height: 40vw; 
+    .circle{
+        border-color: white;
+        border-width: 1.5px;
+        img{
+            width: 20px
+        }
+    }
+    // === text === //
+    .text {
+        width: 55vw;
+        height: 25vw;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        p {
+            font-family: Hurme-bold, sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 0.1px;
+            text-align: left;
+            color: #fefefe;
+            transition: all 0.9s ease
+        }
+        .name {
+            font-family: Hurme-semi-obl, sans-serif;
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            text-align: right;
+            padding-left: 2em
+        }
+        .buttons {
+            @include flex;
+            height: 10vw !important;
+            justify-content: flex-start
+        }
+        .btn {
+            width: 320px;
+            height: 54px;
+            border-radius: 27px;
+            @include flex;
+            color: white;
+            font-family: Hurme-regular, sans-serif;
+            font-size: 23px;
+            letter-spacing: 0.1px;
+            text-align: center;
+            text-decoration: none;
+            margin: 0.5em;
+            transition: all 0.4s ease;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+        .bold {
+            font-family: Hurme-bold, sans-serif;
+            margin-left: 0.4em
+        }
+        .btn1 {
+            background-color: $green;
+            border: 1px solid $green;
+            &:hover {
+                color: $green
+            }
+        }
+        .btn2 {
+            background-color: $orange;
+            border: 1px solid $orange;
+            &:hover {
+                color: $orange
+            }
+        }
+    }
+} // === carousel === //
+.carousel {
+    height: 100% !important;
+    width: 100%;
+    position: relative;
+    div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    img {
+        position: absolute;
+        right: 200px;
+        bottom: -5px !important;
+        filter: brightness(120%);
+    }
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.slider-img {
+    width: 30vw;
+}
+
+.prev {
+    position: absolute;
+    left: 1em;
+    top: 30%
+}
+
+.next {
+    position: absolute;
+    right: 1em;
+    top: 30%
+}
+
+@media only screen and (max-width: 1170px) {
+    .hero {
+        .slide {
+            img {
+                position: absolute;
+                right: 20px;
+                bottom: 0px;
+                filter: brightness(120%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .hero {
+        .text {
+            width: 60vw;
+            p {
+                font-size: 1.1em
+            }
+            .name {
+                font-size: 10px;
+                padding-left: 0.5em
+            }
+            .btn {
+                font-size: 16px;
+                height: 40px;
+            }
+            
+        }
+        .circle{
+            width: 20px !important;
+            height: 20px !important;
+            border-radius: 10px;
+            img{
+                width: 10px
+            }
+        }
+    }
+}
+@media only screen and (max-width: 550px){
+    .hero{
+        height: 50vw; 
+        .text{
+            .btn{
+                font-size: 9px;
+                height: 25px;
+            }
+        }
+        .triangle{
+            display: none
+        }
+        .prev {
+            left: 0.2em;
+        }
+        .next {
+            right: 0.2em;
+        }
+    }
+    .slider-img {
+        width: 25vw;
+    }
+}

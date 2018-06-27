@@ -1,0 +1,100 @@
+.why {
+    padding-top: 4em;
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-family: Hurme-semi, sans-serif;
+    }
+    .item {
+        @include flex;
+        flex-direction: column;
+        height: 15em;
+    }
+    .num {
+        font-size: 45px;
+        letter-spacing: 0.2px;
+        color: $black;
+        position: relative;
+        width: 90px;
+        right: 70px
+    }
+    .num2 {
+        right: 100px;
+        width: 80px;
+    }
+    .num3 {
+        width: 165px;
+        right: 50px
+    }
+    .text {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+        text-align: left;
+        color: $orange
+    }
+    .icon {
+        position: absolute;
+        top: -20px;
+        left: 100%;
+        height: 69px;
+    }
+    /*.item-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }*/
+    .buttons{
+        @include flex;
+    }
+    .btn {
+        width: 320px;
+        height: 54px;
+        border-radius: 27px;
+        @include flex;
+        color: white;
+        font-family: Hurme-regular,sans-serif;
+        font-size: 23px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0.5em;
+        transition: all 0.4s ease;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+    .bold{
+        font-family: Hurme-bold,sans-serif;
+        margin-left: 0.4em
+    }
+    .btn1{
+        background-color: $green;
+        border: 1px solid $green;
+        &:hover{
+            color: $green
+        }
+    }
+    .btn2{
+        background-color: $orange;
+        border: 1px solid $orange;
+        &:hover{
+            color: $orange
+        }
+    }
+}
+@media only screen  and (max-width: 900px){
+    .why{
+        .grid{
+            grid-template-columns: 1fr
+        }
+    }
+}
+@media only screen  and (max-width: 510px){
+    .why{
+        .btn{
+            font-size: 14px
+        }
+    }
+}

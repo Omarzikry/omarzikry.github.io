@@ -1,0 +1,35 @@
+// === parteners section === //
+.parteners{
+    h2{
+        padding-bottom: 2em;
+    }
+    .logo{
+        height: 100px;
+        width: 200px
+    }
+    .prev4,.next4{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .carousel-container4{
+        position: relative;
+        width: 100%;
+        padding-bottom: 5em
+    }
+    .prev4{
+        position: absolute;
+        left: 20px;
+        top: 10%
+    }
+    .next4{
+        position: absolute;
+        right: 20px;
+        top: 10%
+    }
+}

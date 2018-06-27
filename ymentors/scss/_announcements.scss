@@ -1,0 +1,169 @@
+.announcements {
+    padding-top: 4em;
+    position: relative;
+    height: 40em;
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto
+    } // === controlers style === //
+    .controllers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        right: 8px;
+        z-index: 6;
+        //background-color: $grey-smoke
+    }
+    .carousel-container3 {
+        width: 55%;
+        margin-top: 4em;
+        padding-top: 1em;
+        position: relative;
+        padding-left: 5%;
+        float: left;
+    } // === header === //
+    h3 {
+        font-family: Hurme-bold, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: left;
+    }
+    p {
+        font-family: Hurme-regular;
+        font-size: 18px;
+        text-align: left;
+        padding-top: 1em;
+    } // === sliders === //
+    .imgs {
+        position: relative;
+        float: right;
+        padding-top: 2em;
+    }
+    #slider1,
+    #slider2,
+    #slider3 {
+        transition: all 1s ease;
+        transition: opacity 0.7s ease;
+        transition: transform 2s ease;
+        height: 236px;
+        width: 236px
+    }
+    #slider1 {
+        position: absolute;
+    }
+    #slider2 {
+        position: absolute;
+    }
+    #slider3 {
+        position: absolute;
+    }
+    .slide1 {
+        z-index: 3;
+        opacity: 1;
+        transform: translateX(-500px) translateY(100px)
+    }
+    .slide2 {
+        z-index: 2;
+        opacity: 0.8;
+        transform: translateX(-350px) translateY(70px)
+    }
+    .slide3 {
+        z-index: 1;
+        opacity: 0.6;
+        transform: translateX(-450px) translateY(0px)
+    } // === buttons === //
+    a {
+        width: 248px;
+        height: 43px;
+        border-radius: 21.5px;
+        border: solid 1.5px $orange;
+        font-family: Hurme-bold,sans-serif;
+        font-size: 22px;
+        @include flex;
+        text-decoration: none;
+        color: $orange;
+        margin-top: 2em;
+        transition: all 0.4s ease;
+        &:hover{
+            background-color: $orange;
+            color: #fff
+        }
+    }
+}
+@media only screen and (max-width: 1280px){
+    .announcements{
+        .carousel-container3{
+            width: 40%;
+            .controllers {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0px;
+                right: -100px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 940px){
+    .announcements{
+        #slider1,#slider2,#slider3{
+            height: 150px;
+            width: 150px
+        }
+        .slide1 {
+            z-index: 3;
+            opacity: 1;
+            transform: translateX(-300px) translateY(200px)
+        }
+        .slide2 {
+            z-index: 2;
+            opacity: 0.8;
+            transform: translateX(-200px) translateY(150px)
+        }
+        .slide3 {
+            z-index: 1;
+            opacity: 0.6;
+            transform: translateX(-320px) translateY(100px)
+        } 
+        a{
+            width: 200px
+        }
+    }
+}
+@media only screen and (max-width: 590px){
+    .announcements{
+        .imgs{
+            display: none
+        }
+        p{
+            line-height: 1.5em;
+            float: left;
+            padding-bottom: 1em
+        }
+        h3,p{
+            text-align: center
+        }
+        .carousel-container3{
+            width: 90%;
+            margin: 0 auto;
+            .controllers {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: -90%;
+                left: 40%;
+            }
+        }
+        a{
+            width: 150px;
+            font-size: 1.2em
+        }
+    }
+}

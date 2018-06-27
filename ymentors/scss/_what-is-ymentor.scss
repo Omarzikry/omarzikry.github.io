@@ -1,0 +1,58 @@
+// === what is ymnetors section === //
+.what {
+    h3 {
+        font-family: Hurme-semi;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+        text-align: left;
+        color: $black
+    }
+    .grid{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding-top: 4em;
+        width: 85%;
+        margin: 0 auto;
+        grid-gap: 2em
+    }
+    p{
+  font-family: Hurme-regular;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: $black;
+  padding: 0 0.5em;
+  padding-top: 1em;
+    }
+    .img-none{
+        display: none;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1em
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .what .grid{
+        grid-template-columns: 1fr;
+        .img-appear{
+            display: none
+        }
+    }
+    .what .img-none{
+        display: block
+    }
+}
+@media only screen and (max-width: 420px){
+    .what p{
+        font-size: 1em;
+        text-align: center !important;
+    }
+    .what h3{
+        font-size: 25px;
+        text-align: center !important;
+    }
+}

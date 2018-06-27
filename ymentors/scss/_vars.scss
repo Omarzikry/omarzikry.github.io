@@ -1,0 +1,21 @@
+// === colors === //
+$black: #373737;
+$green: #7cbb00;
+$orange: #f65314;
+$grey: #909090;
+$card-grey: #6b6b6b;
+$grey-smoke: #f6f6f6;
+// === mixins === //
+@mixin flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+// ratio //
+$ratio: 360 / 640;
